@@ -26,11 +26,11 @@ def start():
     settings = fetch_settings(logger)
     logger.info("Bid status is %s", settings['bid_status'])
     """implement trial period block"""
-    sell_date = '2021-02-21'
+    sell_date = '2021-03-31'
     sell_date = datetime.strptime(sell_date, '%Y-%m-%d')
     expiry_date = sell_date + timedelta(20)
     if (expiry_date > datetime.now()):
-        difference = expiry_date - sell_date
+        difference = expiry_date - datetime.now()
         logger.info("Executing trial version. You have %s days remaining.", difference.days)
         bot = Bot(user_details,settings, logger)
         bot.start_bot()

@@ -94,8 +94,8 @@ class Bot(object):
                 # click apply button
                 if (self.BID_STATUS == "True"):
                     try:
-                        WebDriverWait(self.driver, 240).until( EC.element_to_be_clickable((By.ID, "apply_button")))
-                        apply_button = self.driver.find_element_by_id("apply_button")
+                        WebDriverWait(self.driver, 240).until( EC.element_to_be_clickable((By.ID, "apply_order")))
+                        apply_button = self.driver.find_element_by_id("apply_order")
                         apply_button.click()
                         self.counter = self.counter + 1
                         self.logger.info("Applied for Order [%s]", order)
