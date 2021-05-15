@@ -194,6 +194,8 @@ class SharkBot(object):
             if 'https://essayshark.com/writer/get_additional_material.html?' in url:
                 self.driver.get(url)
                 counter = counter + 1
+            if counter > 1:
+                break
         self.logger.info("%s files downloaded", counter)
 
 
@@ -208,7 +210,7 @@ class SharkBot(object):
             # send message by clicking send button
             chat_box_button.click()
             # wait for time
-            winsound.Beep(440, 3000)
+            #winsound.Beep(440, 3000)
             self.logger.info("Message sent to client")
             self.logger.info("Pausing execution for a few seconds...")
             time.sleep(self.randomize_delay())

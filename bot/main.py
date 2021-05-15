@@ -20,7 +20,7 @@ def start():
     
     user_details = fetch_user_details(logger)
     settings = fetch_settings(logger)
-    sell_date = '2021-04-9'
+    sell_date = '2021-05-13'
     sell_date = datetime.strptime(sell_date, '%Y-%m-%d')
     expiry_date = sell_date + timedelta(20)
     if (expiry_date > datetime.now()):
@@ -68,9 +68,14 @@ def check_log_folder(dir_name):
         print ("[INFO] Successfully created the directory {} ".format(os.path.abspath(dir_name)))
     return format(os.path.abspath(dir_name))
 
-def resource_path():
-    CHROME_DRIVER = os.path.join(os.path.join(os.getcwd(), 'C:\\Users\\Admin\\Documents\\projects\\bots\\myessaywriter\\bot\\driver'), 'chromedriver.exe')
-    return CHROME_DRIVER
+def resource_path(logger, relative_path):
+
+    try:
+        base_path = sys._MEIPASS
+        
+    except Exception:
+        base_path = os.path.dirname(os.path.abspath(__file__))
+    return os.path.join(base_path, relative_path)
 
 def fetch_settings(logger):
     """Fetch to fetch configuration settings from setup.ini"""
@@ -82,7 +87,7 @@ def fetch_settings(logger):
     bid_status = config.get("bid_status","bid")
     # Fetch delay
     settings['delay']= config.getint("delay", "seconds")
-    chrome_driver = resource_path()
+    chrome_driver = resource_path(logger, CHROME_DRIVER_PATH)
     logger.debug("Successfully fetched chrome driver path")
     # fetch client messages
     messages = json.loads(config.get("client_message","messages"))
