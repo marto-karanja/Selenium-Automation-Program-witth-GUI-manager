@@ -20,7 +20,7 @@ def start():
     
     user_details = fetch_user_details(logger)
     settings = fetch_settings(logger)
-    sell_date = '2021-05-13'
+    sell_date = '2021-12-13'
     sell_date = datetime.strptime(sell_date, '%Y-%m-%d')
     expiry_date = sell_date + timedelta(20)
     if (expiry_date > datetime.now()):
