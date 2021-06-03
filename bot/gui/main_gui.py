@@ -109,7 +109,7 @@ class SharkGui():
         
         ttk.Label(main_window, text="Choose number of bidders:").grid(column=1, row=0)
         number = tk.StringVar()
-        self.number_chosen = ttk.Combobox(main_window, width=12, textvariable=number)
+        self.number_chosen = ttk.Combobox(main_window, width=12, textvariable=number, state='readonly')
         self.number_chosen['values'] = (1, 2, 3, 4, 5, 6)
         self.number_chosen.grid(column=1, row=1)
         self.number_chosen.current(1)
