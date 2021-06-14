@@ -1,4 +1,8 @@
 import tkinter as tk
+import concurrent.futures
+import queue
+import threading
+# other tkinter imports
 from tkinter import ttk
 from tkinter import scrolledtext
 from tkinter import Menu
@@ -12,7 +16,9 @@ from bot_launcher import Launcher
 class SharkGui():
     def __init__(self):         # Initializer method
         # Create instance
-        self.win = tk.Tk()   
+        self.win = tk.Tk()
+        self.win.geometry('600x400')
+        self.win.call('wm', 'attributes', '.', '-topmost', True)   
         
         
         # Add a title       
@@ -45,14 +51,77 @@ class SharkGui():
     def initialize_bots(self):
         """Function to initialize and run bot"""
         # Initialize producer bot
-        main_bot = SharkBotTemp(user_details,settings, logger)
-        # initalize multple worker bots
-        bot_1 = SharkBotTemp(user_details,settings, logger)
-        bot_2 = SharkBotTemp(user_details,settings, logger)
+        # start progress bar
+
+        # initalize multple worker bots &
         # log in for all bots
-        main_bot.start_bot()
-        bot_1.start_bot()
-        bot_2.start_bot()
+        # Use a for loop to create a list of instances
+        bots = []
+        choosen_bots = int(self.number_of_bots_chosen.get())
+        i = 1
+        while i <= choosen_bots:
+            bot_name = "bot_" + str(i)
+            bots.append(bot_name)
+            i = i + 1
+        self.scrol.insert(tk.INSERT, bots)
+        # start main producer bot
+        self.progress_bar.start()
+        self.main_bot = SharkBotTemp(self.launcher.user_details,self.launcher.bot_settings, self.logger)
+        self.main_bot.start_bot()
+        # create objects for all strings in consumer bots list
+        ## To Do: Launch in a thread
+        # list to hold consumer objetcs
+        consumer_bots = []
+        for bot in bots:
+            bot = SharkBotTemp(self.launcher.user_details,self.launcher.bot_settings, self.logger)
+            bot.start_bot()
+            consumer_bots.append(bot)
+
+        # stop progress bar
+        self.progress_bar.stop()
+
+        
+
+        # pass list object to class variable for use in other functions
+        self.consumer_bots = consumer_bots
+        # create event and queue
+        self.pipeline = queue.Queue(maxsize=10)
+        self.event = threading.Event()
+        self.logger.info("Queue and event object created")
+
+        ## create producer and consumer threads
+        max_workers = 5 if 5 > choosen_bots else choosen_bots
+        executor = concurrent.futures.ThreadPoolExecutor(max_workers=max_workers)
+        # creating producer thread
+        # store existing orders in the main_order list
+        ## store existing orders during bot start up
+        fetched_orders = self.main_bot.fetch_orders()
+        self.scrol.insert(tk.INSERT, "Initial orders found on Ac")
+        self.main_bot.order_list.update(fetched_orders)
+        self.scrol.insert(tk.INSERT, self.main_bot.order_list)
+        # launch producer thread
+        executor.submit(self.main_bot.fetch_queued_orders, self.pipeline, self.event)
+        self.logger.info("Main consumer bidding bot created and assigned to thread")
+
+        # creating consumer thread using a for loop
+        for bot in self.consumer_bots:
+            executor.submit(bot.process_queued_orders, self.pipeline, self.event)
+
+        self.logger.info("Producer consumer bots created")
+        self.event.set()
+        self.logger.info("Event has been set")
+
+        
+        """
+
+        # initialize threads
+        executor = concurrent.futures.ThreadPoolExecutor(max_workers=5)
+        executor.submit(bot_1.process_queued_orders, pipeline, event)
+        executor.submit(bot_2.process_queued_orders, pipeline, event)"""
+
+    def stop_bot(self):
+        """Stops running threads cleanly"""
+        pass
 
 
         # Spinbox callback 
@@ -77,22 +146,27 @@ class SharkGui():
         tab1 = ttk.Frame(tabControl)            # Create a tab 
         tabControl.add(tab1, text='Tab 1')      # Add the tab
         tab2 = ttk.Frame(tabControl)            # Add a second tab
-        tabControl.add(tab2, text='Tab 2')      # Make second tab visible
+        tabControl.add(tab2, text='Bot Settings')      # Make second tab visible
         
         tabControl.pack(expand=1, fill="both")  # Pack to make visible
         
         # LabelFrame using tab1 as the parent
         main_window = ttk.LabelFrame(tab1, text='SharkBot Settings')
-        main_window.grid(column=0, row=0, padx=8, pady=4)
+        main_window.grid(column=0, row=0, sticky = "nsew", padx=8, pady=4)
+        main_window.grid_rowconfigure(0, weight = 1)
+        main_window.grid_columnconfigure(0, weight = 1)
         
         # Modify adding a Label using mighty as the parent instead of win
         a_label = ttk.Label(main_window, text="Choose Bot Delay:")
         a_label.grid(column=0, row=0, sticky='W')
     
     
-        # Adding a Spinbox widget
-        self.bot_delay_spin = Spinbox(main_window, values=(2, 4, 6, 8, 10, 12, 15,20, 25, 30, 60, 120, 240), width=5, bd=9, command=self._spin)# using range
-        self.bot_delay_spin.grid(column=0, row=1)
+        # Adding a delay combobox
+        self.delay_time = tk.StringVar()
+        self.delay_combobox =ttk.Combobox(main_window, width=12, state='readonly', textvariable=self.delay_time)
+        self.delay_combobox['values'] = ("1 Secs", "2 Secs", "3 Secs", "5 Secs", "10 Secs", "15 Secs", "30 Secs", "45 Secs","60 Secs")
+        self.delay_combobox.grid(column=0, row=1)
+        self.delay_combobox.current(2)
                       
         
         # Adding a Button
@@ -104,15 +178,22 @@ class SharkGui():
         self.number_of_bots_chosen = ttk.Combobox(main_window, width=12, state='readonly', textvariable=self.number_of_bots)
         self.number_of_bots_chosen['values'] = (1, 2, 3, 4, 5, 6)
         self.number_of_bots_chosen.grid(column=1, row=1)
-        self.number_of_bots_chosen.current(2)
+        self.number_of_bots_chosen.current(1)
         
+        # Add a Progressbar to Tab 2
+        self.progress_bar = ttk.Progressbar(main_window, orient='horizontal', length=286, mode='determinate')
+        self.progress_bar.grid(column=0, row=3, pady=2, sticky='WE', columnspan=2)
+        
+        # Adding a stop Button
+        self.stop_bot_button = ttk.Button(main_window, text="Stop Bot!", command=self.stop_bot)   
+        self.stop_bot_button.grid(column=2, row=3)    
              
 
         # Using a scrolled Text control    
         scrol_w  = 30
         scrol_h  =  3
         self.scrol = scrolledtext.ScrolledText(main_window, width=scrol_w, height=scrol_h, wrap=tk.WORD)
-        self.scrol.grid(column=0, row=3, sticky='WE', columnspan=3)                    
+        self.scrol.grid(column=0, row=4, sticky='WE', columnspan=3)                    
         
         
         # Tab Control 2 ----------------------------------------------------------------------
@@ -141,7 +222,7 @@ class SharkGui():
 
         #########################################################################
         # display settings
-        self.scrol.insert(tk.INSERT, self.launcher.bot_settings)
+        #self.scrol.insert(tk.INSERT, self.launcher.bot_settings)
 
 
 

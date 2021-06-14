@@ -112,3 +112,76 @@ class Launcher():
         sell_date = datetime.strptime(sell_date, '%Y-%m-%d')
         expiry_date = sell_date + timedelta(200)
         return expiry_date
+
+
+import tkinter as tk
+from tkinter import ttk
+from tkinter import scrolledtext
+from tkinter import Menu
+from tkinter import messagebox as msg
+from tkinter import Spinbox
+from datetime import date, datetime, timedelta
+from sharkbot.tempBot import SharkBotTemp
+
+class RunBot():
+    def initialize_bots(self, inst):
+        """Function to initialize and run bot"""
+        # Initialize producer bot
+        # start progress bar
+
+        # initalize multple worker bots &
+        # log in for all bots
+        # Use a for loop to create a list of instances
+        bots = []
+        choosen_bots = int(inst.number_of_bots_chosen.get())
+        i = 1
+        while i <= choosen_bots:
+            bot_name = "bot_" + str(i)
+            bots.append(bot_name)
+            i = i + 1
+        inst.scrol.insert(tk.INSERT, bots)
+        # start main producer bot
+        inst.progress_bar.start()
+        inst.main_bot = SharkBotTemp(inst.launcher.user_details,inst.launcher.bot_settings, inst.logger)
+        inst.main_bot.start_bot()
+        # create objects for all strings in consumer bots list
+        ## To Do: Launch in a thread
+        # list to hold consumer objetcs
+        consumer_bots = []
+        for bot in bots:
+            bot = SharkBotTemp(inst.launcher.user_details,inst.launcher.bot_settings, inst.logger)
+            bot.start_bot()
+            consumer_bots.append(bot)
+
+        # stop progress bar
+        inst.progress_bar.stop()
+
+        
+
+        # pass list object to class variable for use in other functions
+        inst.consumer_bots = consumer_bots
+        # create event and queue
+        inst.pipeline = queue.Queue(maxsize=10)
+        inst.event = threading.Event()
+        inst.logger.info("Queue and event object created")
+
+        ## create producer and consumer threads
+        max_workers = 5 if 5 > choosen_bots else choosen_bots
+        self.executor = concurrent.futures.ThreadPoolExecutor(max_workers=max_workers)
+        # creating producer thread
+        # store existing orders in the main_order list
+        ## store existing orders during bot start up
+        fetched_orders = inst.main_bot.fetch_orders()
+        inst.scrol.insert(tk.INSERT, "Initial orders found on Ac")
+        inst.main_bot.order_list.update(fetched_orders)
+        inst.scrol.insert(tk.INSERT, inst.main_bot.order_list)
+        # launch producer thread
+        self.executor.submit(inst.main_bot.fetch_queued_orders, inst.pipeline, inst.event)
+        inst.logger.info("Main consumer bidding bot created and assigned to thread")
+
+        # creating consumer thread using a for loop
+        for bot in inst.consumer_bots:
+            self.executor.submit(bot.process_queued_orders, inst.pipeline, inst.event)
+
+        inst.logger.info("Producer consumer bots created")
+        #inst.event.set()

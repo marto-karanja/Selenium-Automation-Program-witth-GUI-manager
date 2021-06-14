@@ -121,9 +121,32 @@ class SharkBotTemp(object):
             order_urls= ()
         return order_urls
 
+    def fetch_queued_orders(self, event, pipeline):
+        """Fetch essays urls and put in a queue"""
+        self.logger.info("Looking for new orders to bid")
+        while not event.isSet():
+            self.logger.info("Entering the event loop")
+            new_orders = self.fetch_orders()
+            queued_orders = new_orders.difference(self.order_list)
+            if len(queued_orders) > 0:
+                # put urls in queue for children bidding bots
+                print(queued_orders)
+                for order in queued_orders:
+                    ## add order to queue for processing
+                    pipeline.put(order)
+                    # add to list of processed orders
+                    self.order_list.add(order)
+                self.driver.get("https://essayshark.com/writer/orders/")
+            else:
+                self.logger.info("No new orders to bid found")
+                time.sleep(self.main_bot.randomize_delay())
+                self.get("https://essayshark.com/writer/orders/")
+
+
     def process_queued_orders(self,queue, event):
         # check for url in queue when queue is not empty
-        while not event.is_set() or not queue.empty():
+        self.logger.info("Consumer bots waiting for queue url")
+        while not event.isSet() or not queue.empty():
             # get a url and start the bidding process
             order = queue.get()
             self.logger.info("Consumer Bidding bot applyin for url: %s (size=%d)", order, queue.qsize())
