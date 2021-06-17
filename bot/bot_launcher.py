@@ -87,6 +87,7 @@ class Launcher():
         settings['delay']= config.getint("delay", "seconds")
         chrome_driver = self.resource_path(CHROME_DRIVER_PATH)
         self.logger.debug("Successfully fetched chrome driver path")
+        self.logger.info("[Chrome Driver path]:%s", chrome_driver)
         # fetch client messages
         messages = json.loads(config.get("client_message","messages"))
         settings['messages'] = messages

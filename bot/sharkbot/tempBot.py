@@ -41,21 +41,22 @@ class SharkBotTemp(object):
 
     def login(self):
         self.logger.info("Logging into Shark...")
-        username = self.driver.find_element_by_id('id_esauth_login_field')
-        password = self.driver.find_element_by_id('id_esauth_pwd_field')
+        username = self.driver.find_element_by_id('auth-login')
+        password = self.driver.find_element_by_id('auth-password')
         username.send_keys(self.email)
         password.send_keys(self.password)
-        signin_button  = self.driver.find_element_by_id("id_esauth_login_button")
+        signin_button  = self.driver.find_element_by_class_name("auth__submit")
         signin_button.click()
         self.logger.info("Completed log in process")
 
     def load_popup(self):
         """Loads the pop up form"""
         # explicitly wait for log in form button to be clickable
+        self.logger.info("Attempting to launch log in form pop up")
         try:
-            WebDriverWait(self.driver, 240).until(EC.element_to_be_clickable((By.ID, "id_esauth_myaccount_login_link")))
+            WebDriverWait(self.driver, 120).until(EC.element_to_be_clickable((By.CLASS_NAME, "header__button--account-desktop")))
             ##launch log in form
-            login_form = self.driver.find_element_by_id("id_esauth_myaccount_login_link")
+            login_form = self.driver.find_element_by_class_name("header__button--account-desktop")
             login_form.click()
             
         except (ElementNotVisibleException, NoSuchElementException, TimeoutException) as e:
@@ -66,10 +67,12 @@ class SharkBotTemp(object):
             # log successful presence of button
             self.logger.info("Form button ready to click")
 
+
+
     def enter_user_details(self):
         ### wait for form to load before entering details
         try:
-            WebDriverWait(self.driver, 240).until( EC.element_to_be_clickable((By.ID, "id_esauth_login_button")))
+            WebDriverWait(self.driver, 240).until( EC.element_to_be_clickable((By.CLASS_NAME, "auth__submit")))
             self.logger.info("Log in form loaded")
             
         except (ElementNotVisibleException, NoSuchElementException,TimeoutException) as e:
