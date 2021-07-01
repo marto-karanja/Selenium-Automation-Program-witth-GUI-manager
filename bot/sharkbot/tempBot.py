@@ -20,6 +20,9 @@ class SharkBotTemp(object):
     def __init__(self, user_details, settings, logger = None):
         # Set up
         self.order_list = set()
+        self.instatiated = True
+        # counter to check how many login attempts have been made
+        self.login_attempts = 0
         self.email = user_details['email']
         self.password = user_details['password']
         self.logger = logger
@@ -33,6 +36,9 @@ class SharkBotTemp(object):
         chrome_options = Options()
         chrome_options.add_argument("--incognito")
         chrome_options.add_argument("--start-maximized")
+        #chrome_options.add_argument("--headless")
+        #chrome_options.add_argument("--disable-gpu")
+        chrome_options.add_argument('log-level=1') 
         self.driver = webdriver.Chrome(options=chrome_options, executable_path=CHROME_DRIVER)
 
     def randomize_delay(self):
@@ -41,21 +47,43 @@ class SharkBotTemp(object):
 
     def login(self):
         self.logger.info("Logging into Shark...")
-        username = self.driver.find_element_by_id('auth-login')
-        password = self.driver.find_element_by_id('auth-password')
-        username.send_keys(self.email)
-        password.send_keys(self.password)
-        signin_button  = self.driver.find_element_by_class_name("auth__submit")
-        signin_button.click()
-        self.logger.info("Completed log in process")
+        try:
+            WebDriverWait(self.driver, 120).until(EC.element_to_be_clickable((By.CLASS_NAME, "auth__submit")))
+        except (ElementNotVisibleException, NoSuchElementException, TimeoutException) as e:
+            self.logger.warning("Unable to find Log In Button")
+        else:
+            username = self.driver.find_element_by_id('auth-login')
+            password = self.driver.find_element_by_id('auth-password')
+            username.send_keys(self.email)
+            password.send_keys(self.password)
+            signin_button  = self.driver.find_element_by_class_name("auth__submit")
+            signin_button.click()
+            
+
+        # Wait for login to complete
+        try:
+            WebDriverWait(self.driver, 60).until(EC.visibility_of_any_elements_located((By.CLASS_NAME, "order_number")))
+        except (ElementNotVisibleException, NoSuchElementException, TimeoutException, StaleElementReferenceException) as e:
+            self.driver.save_screenshot("Error_file.png")
+            self.logger.info("Unable to find order tables: ? Log in not completed successfully")
+            if self.login_attempts == 0:
+                # if has not attempted to log in, try again
+                self.driver.refresh()
+                self.logger.info("Refreshing and attempting logon again")
+                self.load_popup()
+                self.login()
+                self.login_attempts =  self.login_attempts + 1
+        else:
+            self.logger.info("Completed log in process")
+        
 
     def load_popup(self):
         """Loads the pop up form"""
         # explicitly wait for log in form button to be clickable
         self.logger.info("Attempting to launch log in form pop up")
         try:
-            WebDriverWait(self.driver, 120).until(EC.element_to_be_clickable((By.CLASS_NAME, "header__button--account-desktop")))
-            ##launch log in form
+            WebDriverWait(self.driver, 120).until(EC.visibility_of_any_elements_located((By.CLASS_NAME, "header__button--account-desktop")))
+            ##launcSS_SELECTORh log in form
             login_form = self.driver.find_element_by_class_name("header__button--account-desktop")
             login_form.click()
             
@@ -76,8 +104,7 @@ class SharkBotTemp(object):
             self.logger.info("Log in form loaded")
             
         except (ElementNotVisibleException, NoSuchElementException,TimeoutException) as e:
-            self.logger.info("Unable to find log in button")
-            self.logger.debug(exc_info=True)
+            self.logger.info("Unable to find log in button", exc_info=True)
             #exit the program
             self.stop_bot()
         else:
@@ -124,7 +151,7 @@ class SharkBotTemp(object):
             order_urls= ()
         return order_urls
 
-    def fetch_queued_orders(self, event, pipeline):
+    def fetch_queued_orders(self, pipeline, event):
         """Fetch essays urls and put in a queue"""
         self.logger.info("Looking for new orders to bid")
         while not event.isSet():
@@ -142,8 +169,8 @@ class SharkBotTemp(object):
                 self.driver.get("https://essayshark.com/writer/orders/")
             else:
                 self.logger.info("No new orders to bid found")
-                time.sleep(self.main_bot.randomize_delay())
-                self.get("https://essayshark.com/writer/orders/")
+                time.sleep(self.randomize_delay())
+                self.driver.get("https://essayshark.com/writer/orders/")
 
 
     def process_queued_orders(self,queue, event):
@@ -151,6 +178,7 @@ class SharkBotTemp(object):
         self.logger.info("Consumer bots waiting for queue url")
         while not event.isSet() or not queue.empty():
             # get a url and start the bidding process
+            self.logger.info("Child bidding bot entering loop to check if queue is populated")
             order = queue.get()
             self.logger.info("Consumer Bidding bot applyin for url: %s (size=%d)", order, queue.qsize())
             #### fetch url
@@ -316,6 +344,10 @@ class SharkBotTemp(object):
         self.load_popup()
         
         self.enter_user_details()
+
+        
+
+
         # set up loop to keep browser window open indefinetly
         """
         try:
@@ -339,10 +371,28 @@ class SharkBotTemp(object):
         # wait for new orders
         self.wait_for_new_orders()"""
 
+    def start_main_bot(self):
+        """Start method for main bot"""
+        #navigate to home page  
+        self.logger.info("Navigating to home page")
+        self.driver.get("https://essayshark.com/")
+        # Log in via thread
+        self.logger.info("Attempting to log in")
+        self.load_popup()
+        
+        self.enter_user_details()
+
+        # get existing orders on page load to bid only for new orders
+        fetched_orders = self.fetch_orders()
+        #self.logger.debug(fetched_orders)
+        self.logger.info("%s orders initially fetched", len(fetched_orders))
+        # get and store initial new orders
+        self.order_list.update(fetched_orders)
+
 
 
     def stop_bot(self):
         """Exit and clean up function"""
         self.logger.debug("Browser window exiting")
         self.driver.quit()
-        sys.exit()
+        #sys.exit()

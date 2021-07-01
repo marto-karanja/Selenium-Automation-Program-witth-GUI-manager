@@ -109,7 +109,7 @@ class Launcher():
 
     def check_expiry(self):
         """checks if trial license is valid, returns expiry date"""
-        sell_date = '2021-05-13'
+        sell_date = '2021-06-22'
         sell_date = datetime.strptime(sell_date, '%Y-%m-%d')
         expiry_date = sell_date + timedelta(200)
         return expiry_date
