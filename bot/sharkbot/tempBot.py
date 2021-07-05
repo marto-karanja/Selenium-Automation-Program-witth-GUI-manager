@@ -1,10 +1,11 @@
 # implementing explicit wait
 
-from logging import debug
+from logging import debug, log
 import time
 import random
 import winsound
 import sys
+import wx
 # import webdriver 
 
 from selenium.webdriver.chrome.options import Options 
@@ -13,7 +14,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait 
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException, StaleElementReferenceException, TimeoutException
-from selenium.common.exceptions import ElementNotVisibleException 
+from selenium.common.exceptions import ElementNotVisibleException
+from selenium.webdriver.common.action_chains import ActionChains
 
 
 class SharkBotTemp(object):
@@ -57,7 +59,10 @@ class SharkBotTemp(object):
             username.send_keys(self.email)
             password.send_keys(self.password)
             signin_button  = self.driver.find_element_by_class_name("auth__submit")
-            signin_button.click()
+            # use ACtions for click actions
+            action = ActionChains(self.driver)
+            action.click(signin_button).perform()
+            #signin_button.click()
             
 
         # Wait for login to complete
@@ -82,10 +87,12 @@ class SharkBotTemp(object):
         # explicitly wait for log in form button to be clickable
         self.logger.info("Attempting to launch log in form pop up")
         try:
-            WebDriverWait(self.driver, 120).until(EC.visibility_of_any_elements_located((By.CLASS_NAME, "header__button--account-desktop")))
+            WebDriverWait(self.driver, 120).until(EC.visibility_of_any_elements_located((By.CLASS_NAME, "button--ghost")))
             ##launcSS_SELECTORh log in form
-            login_form = self.driver.find_element_by_class_name("header__button--account-desktop")
-            login_form.click()
+            login_form_button = self.driver.find_element_by_class_name("button--ghost")
+            action = ActionChains(self.driver)
+            action.click(login_form_button).perform()
+            #login_form_button.click()
             
         except (ElementNotVisibleException, NoSuchElementException, TimeoutException) as e:
             self.logger.warning("Unable to find Log In Button")
@@ -151,7 +158,7 @@ class SharkBotTemp(object):
             order_urls= ()
         return order_urls
 
-    def fetch_queued_orders(self, pipeline, event):
+    def fetch_queued_orders(self, pipeline, event, window):
         """Fetch essays urls and put in a queue"""
         self.logger.info("Looking for new orders to bid")
         while not event.isSet():
@@ -164,6 +171,8 @@ class SharkBotTemp(object):
                 for order in queued_orders:
                     ## add order to queue for processing
                     pipeline.put(order)
+                    msg = "Order [{}] added to queue".format(order)
+                    wx.CallAfter(window.log_message_to_txt_field,msg )
                     # add to list of processed orders
                     self.order_list.add(order)
                 self.driver.get("https://essayshark.com/writer/orders/")
@@ -173,13 +182,15 @@ class SharkBotTemp(object):
                 self.driver.get("https://essayshark.com/writer/orders/")
 
 
-    def process_queued_orders(self,queue, event):
+    def process_queued_orders(self,queue, event, window):
         # check for url in queue when queue is not empty
         self.logger.info("Consumer bots waiting for queue url")
         while not event.isSet() or not queue.empty():
             # get a url and start the bidding process
             self.logger.info("Child bidding bot entering loop to check if queue is populated")
             order = queue.get()
+            msg = "Order [{}] added to queue".format(order)
+            wx.CallAfter(window.log_message_to_txt_field, msg )
             self.logger.info("Consumer Bidding bot applyin for url: %s (size=%d)", order, queue.qsize())
             #### fetch url
             self.driver.get(order)
@@ -223,6 +234,8 @@ class SharkBotTemp(object):
                         self.counter = self.counter + 1
                         self.logger.info("Applied for Order [%s]", order)
                         self.logger.info("%s orders have been processed", self.counter)
+                        msg = "Applied for Order [{}]".format(order)
+                        wx.CallAfter(window.log_message_to_txt_field, msg )
                     except (ElementNotVisibleException, NoSuchElementException, TimeoutException) as e:
                         self.logger.info("Apply button not found")
                     else:
@@ -230,6 +243,8 @@ class SharkBotTemp(object):
                                        
                 else:
                     self.logger.info("Bid Status set to false. Order not applied")
+                    msg = "Bid Status set to false. Order [{}] not applied".format(order)
+                    wx.CallAfter(window.log_message_to_txt_field, msg )
                     self.counter = self.counter + 1
                     self.logger.info("%s orders have been processed", self.counter)
 
