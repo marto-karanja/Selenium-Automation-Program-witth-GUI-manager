@@ -1,6 +1,7 @@
 from sys import maxsize
 import wx
 import threading
+import time
 from queue import Queue
 from datetime import datetime
 
@@ -22,9 +23,9 @@ class SharkFrame(wx.Frame):
         self.SetIcon(wx.Icon("gui/assets/sharkbot.ico"))
 
         panel = wx.Panel(self)
-        startBtn = wx.Button(panel, -1, "Start Bidding Bots")
+        self.startBtn = wx.Button(panel, -1, "Start Bidding Bots")
         stopBtn  = wx.Button(panel, -1, "Stop all Bidding Bots")
-        self.tc = wx.StaticText(panel, -1, "Worker Threads: 00")
+        self.tc = wx.StaticText(panel, -1, "Active Bidding Bots: 00")
         self.logTxtField = wx.TextCtrl(panel, -1, "",
                                style=wx.TE_RICH|wx.TE_MULTILINE)
 
@@ -40,14 +41,51 @@ class SharkFrame(wx.Frame):
         self.bot_bidder_combo = wx.ComboBox(panel, -1, "Choose No. Of Bidders", (15, 30), (150,25), bot_combo_values, wx.CB_DROPDOWN|wx.CB_READONLY)
         bid_status_choices = ['True', 'False']
         self.bid_status_combo = wx.ComboBox(panel, -1, "Choose Bid status", (15, 30), (150,25), bid_status_choices, wx.CB_DROPDOWN|wx.CB_READONLY)
-        self.bid_status_combo.SetValue('True')
+        self.bid_status_combo.SetValue(self.launcher.bot_settings['bid_status'])
         self.bot_bidder_combo.SetValue(bot_combo_values[1])
 
         # Add a progress bar
-        self.progress_bar = wx.Gauge( panel, -1, 100, wx.DefaultPosition, wx.DefaultSize, wx.GA_HORIZONTAL )
-        self.progress_bar.SetValue( 0 ) 
+        #self.progress_bar = wx.Gauge( panel, -1, 100, wx.DefaultPosition, wx.DefaultSize, wx.GA_HORIZONTAL )
+        #self.progress_bar.SetValue( 0 )
+        
+        ### Add a filter settings button
+
+        # Use GridBagSizer for layout
+        control_panel_sizer = wx.GridBagSizer(hgap=10, vgap=10)
+        control_panel_sizer.Add(delay_combo_text, pos = (0,0), flag= wx.EXPAND | wx.CENTER, border=10)
+        control_panel_sizer.Add(bidder_combo_text, pos = (0,1), flag= wx.EXPAND | wx.CENTER, border=10)
+        control_panel_sizer.Add(bid_status_combo_text, pos = (0,2), flag= wx.EXPAND | wx.CENTER, border=10)
+        # Combo Box options
+        control_panel_sizer.Add(self.bot_delay_combo, pos = (1,0), flag= wx.EXPAND | wx.CENTER, border=10)
+        control_panel_sizer.Add(self.bot_bidder_combo, pos = (1,1), flag= wx.EXPAND | wx.CENTER, border=10)
+        control_panel_sizer.Add(self.bid_status_combo, pos = (1,2), flag= wx.EXPAND | wx.CENTER, border=10)
+        # Button options row
+        control_panel_sizer.Add(self.startBtn, pos = (2,0), flag= wx.EXPAND | wx.CENTER, border=10)
+        control_panel_sizer.Add(stopBtn, pos = (2,1), flag= wx.EXPAND | wx.CENTER, border=10)
+        control_panel_sizer.Add(self.tc, pos = (2,2), border=10)
+        # Add Progress bar
+        #control_panel_sizer.Add(self.progress_bar, pos=(3,0),  border=10, span=(1,3), flag=wx.EXPAND)
 
 
+        #TO DO:  resizing logic
+        control_panel_sizer.AddGrowableCol(0)
+        control_panel_sizer.AddGrowableCol(1)
+        control_panel_sizer.AddGrowableCol(2)
+
+
+
+        control_holder = wx.BoxSizer(wx.VERTICAL)
+        control_holder.Add(control_panel_sizer, 1, wx.EXPAND|wx.ALL, 10)        
+
+        main_sizer = wx.BoxSizer(wx.VERTICAL)
+        main_sizer.Add(control_holder)
+        main_sizer.Add(self.logTxtField, 1, wx.EXPAND|wx.ALL, 5)
+
+        panel.SetSizer(main_sizer)
+
+
+
+        """
         button_sizer = wx.BoxSizer(wx.HORIZONTAL)
         button_sizer.Add(startBtn, 0, wx.RIGHT, 15)
         button_sizer.Add(stopBtn, 0, wx.RIGHT, 15)
@@ -72,15 +110,15 @@ class SharkFrame(wx.Frame):
         main.Add(button_sizer, 0, wx.ALL, 5)
         main.Add(progress_sizer, 0, wx.EXPAND|wx.ALL, 5)
         main.Add(self.logTxtField, 1, wx.EXPAND|wx.ALL, 5)
-        panel.SetSizer(main)
+        panel.SetSizer(main)"""
 
         
-        self.Bind(wx.EVT_BUTTON, self.OnStartButton, startBtn)
+        self.Bind(wx.EVT_BUTTON, self.OnStartButton, self.startBtn)
         self.Bind(wx.EVT_BUTTON, self.OnStopButton, stopBtn)
         self.Bind(wx.EVT_CLOSE,  self.OnCloseWindow)
 
         self.ToggleWindowStyle(wx.STAY_ON_TOP)
-        self.SetSize(600, 400)
+        self.SetSize(565, 495)
 
         
 
@@ -110,18 +148,18 @@ class SharkFrame(wx.Frame):
         # log in for all bots
         # Use a for loop to create a list of instances
         bots = []
+        self.launcher.bot_settings['bid_status'] = self.bid_status_combo.GetValue()
         choosen_bots = self.bot_bidder_combo.GetValue()
         self.logger.info("ComboBox Value %s",choosen_bots)
         no_of_bots = self.bot_choices[choosen_bots]
-        self.update_status_text("{} Bots Running".format(no_of_bots))
+        self.update_status_text("1 Main Bot and {} Bidding Bots Running".format(no_of_bots))
         i = 1
         while i <= int(no_of_bots):
             bot_name = "bot_" + str(i)
             bots.append(bot_name)
             i = i + 1
-        # function to update combo box field
-        # self.updateTxtField(msg)
-        #self.scrol.insert(tk.INSERT, bots)
+        # disable button
+        self.startBtn.Disable()
         # start main producer bot
         ## Start progress bar self.progress_bar.start()
 
@@ -176,6 +214,21 @@ class SharkFrame(wx.Frame):
         if len(self.active_threads) > 0:
             self.logger.info("Stopping all threads...")
             self.quit_event.set()
+        self.log_message_to_txt_field("Stopping all Bidding Bots....")
+        # Shut Down Chrome driver instances
+        time.sleep(30)
+        try:
+            if self.main_bot.instatiated == True:
+                self.main_bot.stop_bot()
+        except AttributeError:
+            # instance class is not available
+            pass
+        # close bidder bots
+        for bot in self.consumer_bots:
+            bot.stop_bot()
+        self.startBtn.Enable()
+        self.log_message_to_txt_field("All Bidding Bots have stopped")
+        self.update_status_text("0 Bots running")
         ## TO DO
         # check if thread is active before joining
         """
@@ -207,6 +260,8 @@ class SharkFrame(wx.Frame):
         self.Destroy()
 
 app = wx.App()
+import locale
+locale.setlocale(locale.LC_ALL, 'en_US')
 frm = SharkFrame()
 frm.Show()
 app.MainLoop()

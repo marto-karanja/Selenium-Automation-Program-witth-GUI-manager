@@ -3,7 +3,7 @@
 block_cipher = None
 
 
-a = Analysis(['main.py'],
+a = Analysis(['shark_gui.py'],
              pathex=['C:\\Users\\Admin\\Documents\\projects\\bots\\shark\\bot'],
              binaries=[('driver\\chromedriver.exe', 'driver\\')],
              datas=[('config.json', '.'), ('setup.ini', '.')],
