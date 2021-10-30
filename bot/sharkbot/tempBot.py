@@ -16,6 +16,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException, StaleElementReferenceException, TimeoutException
 from selenium.common.exceptions import ElementNotVisibleException
 from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.common.keys import Keys
 
 
 class SharkBotTemp(object):
@@ -38,6 +39,7 @@ class SharkBotTemp(object):
         chrome_options = Options()
         chrome_options.add_argument("--incognito")
         chrome_options.add_argument("--start-maximized")
+        chrome_options.add_experimental_option("excludeSwitches", ['enable-automation']);
         #chrome_options.add_argument("--headless")
         #chrome_options.add_argument("--disable-gpu")
         chrome_options.add_argument('log-level=1') 
@@ -50,7 +52,7 @@ class SharkBotTemp(object):
     def login(self):
         self.logger.info("Logging into Shark...")
         try:
-            WebDriverWait(self.driver, 120).until(EC.element_to_be_clickable((By.CLASS_NAME, "auth__submit")))
+            WebDriverWait(self.driver, 45).until(EC.element_to_be_clickable((By.XPATH, "//button[contains(.,'Login')]")))
         except (ElementNotVisibleException, NoSuchElementException, TimeoutException) as e:
             self.logger.warning("Unable to find Log In Button")
         else:
@@ -58,16 +60,24 @@ class SharkBotTemp(object):
             password = self.driver.find_element_by_id('auth-password')
             username.send_keys(self.email)
             password.send_keys(self.password)
-            signin_button  = self.driver.find_element_by_class_name("auth__submit")
+            signin_button  = self.driver.find_element_by_xpath("//button[ @type='submit' and contains(.,'Login')]")
+            signin_button.send_keys(Keys.ENTER)
+            # use action chains
+            """
+            action = ActionChains(self.driver)
+            action.click(signin_button).perform()"""
+            """
             # use ACtions for click actions
             action = ActionChains(self.driver)
-            action.click(signin_button).perform()
-            #signin_button.click()
+            action.click(signin_button).perform()"""
+            #
+            # 
+            # signin_button.click()
             
 
         # Wait for login to complete
         try:
-            WebDriverWait(self.driver, 60).until(EC.visibility_of_any_elements_located((By.CLASS_NAME, "order_number")))
+            WebDriverWait(self.driver, 45).until(EC.visibility_of_any_elements_located((By.CLASS_NAME, "order_number")))
         except (ElementNotVisibleException, NoSuchElementException, TimeoutException, StaleElementReferenceException) as e:
             self.driver.save_screenshot("Error_file.png")
             self.logger.info("Unable to find order tables: ? Log in not completed successfully")
@@ -80,40 +90,165 @@ class SharkBotTemp(object):
                 self.login_attempts =  self.login_attempts + 1
         else:
             self.logger.info("Completed log in process")
+
+    def set_filters(self, active_filters):
+        filter_settings_id = {
+            "sample_writing" : "id_filter_service_type_10",
+            "editing_or_rewriting" : "id_filter_service_type_40",
+            "writing_help" : "id_filter_service_type_400",
+            "art" : "id_filter_discipline_320",
+            "business_and_management": "id_filter_discipline_20",
+            "computer_science" : "id_filter_discipline_110",
+            "economics" : "id_filter_discipline_40",
+            "engineering" : "id_filter_discipline_420",
+            "english_and_literature" : "id_filter_discipline_10",
+            "health_care_and_life_sciences" : "id_filter_discipline_100",
+            "history" : "id_filter_discipline_50",
+            "humanities" : "id_filter_discipline_430",
+            "law" : "id_filter_discipline_130",
+            "marketing" : "id_filter_discipline_30",
+            "mathematics_and_statistics" : "id_filter_discipline_120",
+            "natural_science" : "id_filter_discipline_360",
+            "philosophy" : "id_filter_discipline_90",
+            "political_science" : "id_filter_discipline_70",
+            "psychology_and_education" : "id_filter_discipline_60",
+            "religion_theology" : "id_filter_discipline_140",
+            "social_science" : "id_filter_discipline_80",
+            "other_disciplines" : "id_filter_discipline_10000",
+            "0_8_hours" : "id_filter_deadline_1",
+            "8_24_hours" : "id_filter_deadline_2",
+            "1_2_days" : "id_filter_deadline_3",
+            "2_3_days" : "id_filter_deadline_4",
+            "3_5_days" : "id_filter_deadline_5",
+            "5_7_days" : "id_filter_deadline_6",
+            "7_10_days" : "id_filter_deadline_7",
+            "10_days" : "id_filter_deadline_8",
+            "exceeded_deadline" : "id_filter_deadline_9",
+            "1_5_pages" : "id_filter_pages_1",
+            "6_10_pages" : "id_filter_pages_2",
+            "11_15_pages" : "id_filter_pages_3",
+            "15_pages" : "id_filter_pages_4",
+            "hide_viewed_orders" : "id_filter_hide_read",
+            "customers_online" : "id_filter_customers_online",
+            "hide_orders_placed" : "id_filter_hide_old",
+            "show_outdated_orders" : "id_filter_bid_outdated",
+        }
+        try:
+            WebDriverWait(self.driver, 60).until(EC.element_to_be_clickable((By.ID, "orders_list_filters_dialog_open")))
+            filter_button = self.driver.find_element_by_id("orders_list_filters_dialog_open")
+            filter_button.click()
+        except (ElementNotVisibleException, NoSuchElementException, TimeoutException, StaleElementReferenceException) as e:
+            self.driver.save_screenshot("Error_file.png")
+            self.logger.info("Unable to find filter button")
+    
+        else:
+            self.logger.info("Filter Button Clicked")
+            for filter in active_filters:
+                check_box = self.driver.find_element_by_id(filter_settings_id[filter])
+                check_box.click()
+        # click apply filter button
+        apply_filter_button = self.driver.find_element_by_xpath('//*[@id="bodystart"]/div[6]/div[3]/div/button')
+        apply_filter_button.click()
+        try:
+            WebDriverWait(self.driver, 45).until(EC.element_to_be_clickable((By.ID, "cancel_filter_button")))
+            
+        except (ElementNotVisibleException, NoSuchElementException, TimeoutException, StaleElementReferenceException) as e:
+            self.driver.save_screenshot("Error_file.png")
+            self.logger.info("Unable to find cancel filter button")
+            return False
+    
+        else:
+            self.logger.info("Cancel Button appeared")
+            return True
         
 
+    def page_is_loading(self):
+        """Check whether page loading has completed successfully"""
+        self.logger.info("Executing page is loading function")       
+        x = self.driver.execute_script("return document.readyState")
+        if x == "complete":
+            self.logger.info("Page loading has completed")
+            return True
+        else:
+            self.logger.info("Page loading is yet to be completed")
+            return False
+
+    
     def load_popup(self):
         """Loads the pop up form"""
         # explicitly wait for log in form button to be clickable
         self.logger.info("Attempting to launch log in form pop up")
         try:
-            WebDriverWait(self.driver, 120).until(EC.visibility_of_any_elements_located((By.CLASS_NAME, "button--ghost")))
+            WebDriverWait(self.driver, 45).until(EC.element_to_be_clickable((By.XPATH, "//button[ @type='button' and contains(.,'My account')]")))
+
+            
+            #account_button.click()
+            """"
             ##launcSS_SELECTORh log in form
             login_form_button = self.driver.find_element_by_class_name("button--ghost")
             action = ActionChains(self.driver)
             action.click(login_form_button).perform()
-            #login_form_button.click()
+            #login_form_button.click()"""
             
         except (ElementNotVisibleException, NoSuchElementException, TimeoutException) as e:
-            self.logger.warning("Unable to find Log In Button")
+            self.logger.warning("Unable to find My Account Button")
             #exit the program
-            self.stop_bot()
+            #self.stop_bot()
         else:
             # log successful presence of button
             self.logger.info("Form button ready to click")
+            # check if page has finished loading
+
+            self.logger.info("Checking whether page loading has completed")
+            
+            page_load = self.page_is_loading()
+
+
+            while not page_load:
+                page_load = self.page_is_loading()
+                continue
+
+            self.logger.info("Completed checking the page load process, proceeding to click button")
+
+
+            """
+            Click parent
+            """
+            """account_button = self.driver.find_element_by_class_name("auth__block")
+            x  = account_button.click()
+            self.logger.info(x)"""
+
+            # use xpath find button bt bame
+
+            account_button = self.driver.find_element_by_xpath("//button[ @type='button' and contains(.,'My account')]")
+            
+            account_button.send_keys(Keys.ENTER)
+   
+   
+            # use action chains to click
+            """
+            action = ActionChains(self.driver)
+            action.click(account_button).perform()"""
+
 
 
 
     def enter_user_details(self):
         ### wait for form to load before entering details
         try:
-            WebDriverWait(self.driver, 240).until( EC.element_to_be_clickable((By.CLASS_NAME, "auth__submit")))
+            WebDriverWait(self.driver, 30).until( EC.element_to_be_clickable((By.XPATH, "//button[ @type='submit' and contains(text(),'Login')]")))
             self.logger.info("Log in form loaded")
             
         except (ElementNotVisibleException, NoSuchElementException,TimeoutException) as e:
             self.logger.info("Unable to find log in button", exc_info=True)
             #exit the program
-            self.stop_bot()
+            self.logger.info("Attempting to reclick My account button from exception code")
+            #self.stop_bot()
+            account_button = self.driver.find_element_by_xpath("//button[ @type='button' and contains(text(),'My account')]")
+            
+            account_button.send_keys(Keys.ENTER)
+            # proceed to log in
+            self.login()
         else:
             # Call Log in function
             self.login()
@@ -392,6 +527,7 @@ class SharkBotTemp(object):
         self.logger.info("Navigating to home page")
         self.driver.get("https://essayshark.com/")
         # Log in via thread
+        self.driver.refresh()
         self.logger.info("Attempting to log in")
         self.load_popup()
         

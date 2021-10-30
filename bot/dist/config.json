@@ -1,7 +1,6 @@
 {
-    "user_details" : {
-    "email" : "joaojohn715@gmail.com",
-    "password" : "eliudkoto96"
-      }
- 
+    "user_details": {
+        "email": "joaojohn715@gmail.com",
+        "password": "eliudkoto96"
+    }
 }

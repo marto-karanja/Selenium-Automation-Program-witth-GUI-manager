@@ -107,9 +107,18 @@ class Launcher():
         self.logger.debug("User details fetched successfully")
         return user_details
 
+    def save_user_details(self, email, password):
+        user_details = {}
+        user_details['email'] = email
+        user_details['password'] = password
+        data = {}
+        data['user_details'] = user_details
+        with open('config.json', 'w') as outfile:
+            json.dump(data, outfile, indent = 4)
+
     def check_expiry(self):
         """checks if trial license is valid, returns expiry date"""
-        sell_date = '2021-06-22'
+        sell_date = '2021-10-25'
         sell_date = datetime.strptime(sell_date, '%Y-%m-%d')
         expiry_date = sell_date + timedelta(200)
         return expiry_date

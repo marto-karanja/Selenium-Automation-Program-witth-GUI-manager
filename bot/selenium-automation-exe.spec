@@ -30,7 +30,7 @@ exe = EXE(pyz,
           upx=True,
           upx_exclude=[],
           runtime_tmpdir=None,
-          console=True )
+          console=False )
 import shutil
 shutil.copyfile('setup.ini', '{0}/setup.ini'.format(DISTPATH))
 shutil.copyfile('config.json', '{0}/config.json'.format(DISTPATH))

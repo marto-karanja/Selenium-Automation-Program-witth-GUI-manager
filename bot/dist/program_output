@@ -1,0 +1,1435 @@
+[INFO] Successfully created the directory C:\Users\Admin\Documents\projects\bots\shark\bot\dist\logs 
+'08/21/2021 02:54:03 PM [MainThread  ] [INFO ]  [Chrome Driver path]:C:\Users\Admin\AppData\Local\Temp\_MEI344602\driver/chromedriver.exe
+'08/21/2021 02:54:03 PM [MainThread  ] [INFO ]  Successfully fetched client messages
+'08/21/2021 02:54:03 PM [MainThread  ] [INFO ]  Logger and configuration details successfully set
+'08/21/2021 02:54:12 PM [MainThread  ] [INFO ]  Executing trial version. You have 139 days remaining.
+'08/21/2021 02:54:12 PM [MainThread  ] [INFO ]  Setting up Bidders......
+'08/21/2021 02:54:12 PM [MainThread  ] [INFO ]  ComboBox Value 6 Bidders
+'08/21/2021 02:54:12 PM [MainThread  ] [INFO ]  Initializing browser instance
+'08/21/2021 02:54:14 PM [MainThread  ] [INFO ]  Navigating to home page
+'08/21/2021 02:54:17 PM [MainThread  ] [INFO ]  Attempting to log in
+'08/21/2021 02:54:17 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/21/2021 02:54:18 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/21/2021 02:54:18 PM [MainThread  ] [INFO ]  Log in form loaded
+'08/21/2021 02:54:18 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/21/2021 02:54:27 PM [MainThread  ] [INFO ]  Completed log in process
+'08/21/2021 02:54:27 PM [MainThread  ] [INFO ]  Initializing browser instance
+'08/21/2021 02:54:30 PM [MainThread  ] [INFO ]  Navigating to home page
+'08/21/2021 02:54:33 PM [MainThread  ] [INFO ]  Attempting to log in
+'08/21/2021 02:54:33 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/21/2021 02:54:34 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/21/2021 02:54:34 PM [MainThread  ] [INFO ]  Log in form loaded
+'08/21/2021 02:54:34 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/21/2021 02:54:54 PM [MainThread  ] [INFO ]  Completed log in process
+'08/21/2021 02:54:54 PM [MainThread  ] [INFO ]  Initializing browser instance
+'08/21/2021 02:54:56 PM [MainThread  ] [INFO ]  Navigating to home page
+'08/21/2021 02:55:01 PM [MainThread  ] [INFO ]  Attempting to log in
+'08/21/2021 02:55:01 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/21/2021 02:55:02 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/21/2021 02:55:03 PM [MainThread  ] [INFO ]  Log in form loaded
+'08/21/2021 02:55:03 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/21/2021 02:55:14 PM [MainThread  ] [INFO ]  Completed log in process
+'08/21/2021 02:55:14 PM [MainThread  ] [INFO ]  Initializing browser instance
+Traceback (most recent call last):
+  File "shark_gui.py", line 393, in launch_browser
+  File "shark_gui.py", line 439, in initialize_bots
+  File "sharkbot\tempBot.py", line 44, in __init__
+  File "site-packages\selenium\webdriver\chrome\webdriver.py", line 76, in __init__
+  File "site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
+  File "site-packages\selenium\webdriver\remote\webdriver.py", line 252, in start_session
+  File "site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+  File "site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+selenium.common.exceptions.WebDriverException: Message: unknown error: DevToolsActivePort file doesn't exist
+
+[INFO] Successfully created the directory C:\Users\Admin\Documents\projects\bots\shark\bot\dist\logs 
+'08/21/2021 10:16:42 PM [MainThread  ] [INFO ]  [Chrome Driver path]:C:\Users\Admin\AppData\Local\Temp\_MEI220362\driver/chromedriver.exe
+'08/21/2021 10:16:42 PM [MainThread  ] [INFO ]  Successfully fetched client messages
+'08/21/2021 10:16:42 PM [MainThread  ] [INFO ]  Logger and configuration details successfully set
+'08/21/2021 10:16:45 PM [MainThread  ] [INFO ]  Executing trial version. You have 139 days remaining.
+'08/21/2021 10:16:45 PM [MainThread  ] [INFO ]  Setting up Bidders......
+'08/21/2021 10:16:45 PM [MainThread  ] [INFO ]  ComboBox Value 6 Bidders
+'08/21/2021 10:16:45 PM [MainThread  ] [INFO ]  Initializing browser instance
+'08/21/2021 10:16:47 PM [MainThread  ] [INFO ]  Navigating to home page
+'08/21/2021 10:16:50 PM [MainThread  ] [INFO ]  Attempting to log in
+'08/21/2021 10:16:50 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/21/2021 10:16:50 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/21/2021 10:16:50 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/21/2021 10:16:50 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/21/2021 10:16:50 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/21/2021 10:16:50 PM [MainThread  ] [INFO ]  Completed checking the page load process
+'08/21/2021 10:16:51 PM [MainThread  ] [INFO ]  Log in form loaded
+'08/21/2021 10:16:51 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/21/2021 10:16:58 PM [MainThread  ] [INFO ]  Completed log in process
+'08/21/2021 10:16:58 PM [MainThread  ] [INFO ]  Initializing browser instance
+'08/21/2021 10:17:01 PM [MainThread  ] [INFO ]  Navigating to home page
+'08/21/2021 10:17:05 PM [MainThread  ] [INFO ]  Attempting to log in
+'08/21/2021 10:17:05 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/21/2021 10:17:05 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/21/2021 10:17:05 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/21/2021 10:17:05 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/21/2021 10:17:05 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/21/2021 10:17:05 PM [MainThread  ] [INFO ]  Completed checking the page load process
+'08/21/2021 10:17:06 PM [MainThread  ] [INFO ]  Log in form loaded
+'08/21/2021 10:17:06 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/21/2021 10:17:19 PM [MainThread  ] [INFO ]  Completed log in process
+'08/21/2021 10:17:19 PM [MainThread  ] [INFO ]  Initializing browser instance
+'08/21/2021 10:17:21 PM [MainThread  ] [INFO ]  Navigating to home page
+'08/21/2021 10:17:24 PM [MainThread  ] [INFO ]  Attempting to log in
+'08/21/2021 10:17:24 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/21/2021 10:17:24 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/21/2021 10:17:24 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/21/2021 10:17:24 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/21/2021 10:17:24 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/21/2021 10:17:24 PM [MainThread  ] [INFO ]  Completed checking the page load process
+'08/21/2021 10:17:24 PM [MainThread  ] [INFO ]  Log in form loaded
+'08/21/2021 10:17:24 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/21/2021 10:17:30 PM [MainThread  ] [INFO ]  Completed log in process
+'08/21/2021 10:17:30 PM [MainThread  ] [INFO ]  Initializing browser instance
+'08/21/2021 10:17:32 PM [MainThread  ] [INFO ]  Navigating to home page
+'08/21/2021 10:17:35 PM [MainThread  ] [INFO ]  Attempting to log in
+'08/21/2021 10:17:35 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/21/2021 10:17:35 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/21/2021 10:17:35 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/21/2021 10:17:35 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/21/2021 10:17:35 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/21/2021 10:17:35 PM [MainThread  ] [INFO ]  Completed checking the page load process
+'08/21/2021 10:17:36 PM [MainThread  ] [INFO ]  Log in form loaded
+'08/21/2021 10:17:36 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/21/2021 10:17:45 PM [MainThread  ] [INFO ]  Completed log in process
+'08/21/2021 10:17:45 PM [MainThread  ] [INFO ]  Initializing browser instance
+'08/21/2021 10:17:47 PM [MainThread  ] [INFO ]  Navigating to home page
+'08/21/2021 10:17:50 PM [MainThread  ] [INFO ]  Attempting to log in
+'08/21/2021 10:17:50 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/21/2021 10:17:50 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/21/2021 10:17:50 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/21/2021 10:17:50 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/21/2021 10:17:50 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/21/2021 10:17:50 PM [MainThread  ] [INFO ]  Completed checking the page load process
+'08/21/2021 10:17:51 PM [MainThread  ] [INFO ]  Log in form loaded
+'08/21/2021 10:17:51 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/21/2021 10:17:59 PM [MainThread  ] [INFO ]  Completed log in process
+'08/21/2021 10:17:59 PM [MainThread  ] [INFO ]  Initializing browser instance
+'08/21/2021 10:18:01 PM [MainThread  ] [INFO ]  Navigating to home page
+'08/21/2021 10:18:04 PM [MainThread  ] [INFO ]  Attempting to log in
+'08/21/2021 10:18:04 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/21/2021 10:18:05 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/21/2021 10:18:05 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/21/2021 10:18:05 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/21/2021 10:18:05 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/21/2021 10:18:05 PM [MainThread  ] [INFO ]  Completed checking the page load process
+'08/21/2021 10:18:05 PM [MainThread  ] [INFO ]  Log in form loaded
+'08/21/2021 10:18:05 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/21/2021 10:18:15 PM [MainThread  ] [INFO ]  Completed log in process
+'08/21/2021 10:18:15 PM [MainThread  ] [INFO ]  Initializing browser instance
+'08/21/2021 10:18:19 PM [MainThread  ] [INFO ]  Navigating to home page
+'08/21/2021 10:18:24 PM [MainThread  ] [INFO ]  Attempting to log in
+'08/21/2021 10:18:24 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/21/2021 10:18:24 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/21/2021 10:18:24 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/21/2021 10:18:24 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/21/2021 10:18:24 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/21/2021 10:18:24 PM [MainThread  ] [INFO ]  Completed checking the page load process
+'08/21/2021 10:18:27 PM [MainThread  ] [INFO ]  Log in form loaded
+'08/21/2021 10:18:27 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/21/2021 10:18:36 PM [MainThread  ] [INFO ]  Completed log in process
+'08/21/2021 10:18:37 PM [MainThread  ] [INFO ]  51 orders initially fetched
+[INFO] Successfully created the directory C:\Users\Admin\Documents\projects\bots\shark\bot\dist\logs 
+'08/21/2021 10:19:35 PM [MainThread  ] [INFO ]  [Chrome Driver path]:C:\Users\Admin\AppData\Local\Temp\_MEI445402\driver/chromedriver.exe
+'08/21/2021 10:19:35 PM [MainThread  ] [INFO ]  Successfully fetched client messages
+'08/21/2021 10:19:35 PM [MainThread  ] [INFO ]  Logger and configuration details successfully set
+'08/21/2021 10:19:42 PM [MainThread  ] [INFO ]  Executing trial version. You have 139 days remaining.
+'08/21/2021 10:19:42 PM [MainThread  ] [INFO ]  Setting up Bidders......
+'08/21/2021 10:19:42 PM [MainThread  ] [INFO ]  ComboBox Value 6 Bidders
+'08/21/2021 10:19:42 PM [MainThread  ] [INFO ]  Initializing browser instance
+'08/21/2021 10:19:44 PM [MainThread  ] [INFO ]  Navigating to home page
+'08/21/2021 10:19:47 PM [MainThread  ] [INFO ]  Attempting to log in
+'08/21/2021 10:19:47 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/21/2021 10:19:47 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/21/2021 10:19:47 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/21/2021 10:19:47 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/21/2021 10:19:47 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/21/2021 10:19:47 PM [MainThread  ] [INFO ]  Completed checking the page load process
+'08/21/2021 10:19:47 PM [MainThread  ] [INFO ]  Log in form loaded
+'08/21/2021 10:19:47 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/21/2021 10:19:53 PM [MainThread  ] [INFO ]  Completed log in process
+'08/21/2021 10:19:53 PM [MainThread  ] [INFO ]  Initializing browser instance
+'08/21/2021 10:19:55 PM [MainThread  ] [INFO ]  Navigating to home page
+'08/21/2021 10:19:58 PM [MainThread  ] [INFO ]  Attempting to log in
+'08/21/2021 10:19:58 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/21/2021 10:19:58 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/21/2021 10:19:58 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/21/2021 10:19:58 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/21/2021 10:19:58 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/21/2021 10:19:58 PM [MainThread  ] [INFO ]  Completed checking the page load process
+'08/21/2021 10:19:58 PM [MainThread  ] [INFO ]  Log in form loaded
+'08/21/2021 10:19:58 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/21/2021 10:21:00 PM [MainThread  ] [INFO ]  Unable to find order tables: ? Log in not completed successfully
+'08/21/2021 10:21:00 PM [MainThread  ] [INFO ]  Refreshing and attempting logon again
+'08/21/2021 10:21:00 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/21/2021 10:21:00 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/21/2021 10:21:00 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/21/2021 10:21:00 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/21/2021 10:21:00 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/21/2021 10:21:00 PM [MainThread  ] [INFO ]  Completed checking the page load process
+'08/21/2021 10:21:01 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/21/2021 10:23:01 PM [MainThread  ] [WARNI]  Unable to find Log In Button
+'08/21/2021 10:24:01 PM [MainThread  ] [INFO ]  Unable to find order tables: ? Log in not completed successfully
+'08/21/2021 10:24:03 PM [MainThread  ] [INFO ]  Refreshing and attempting logon again
+'08/21/2021 10:24:03 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/21/2021 10:24:03 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/21/2021 10:24:03 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/21/2021 10:24:03 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/21/2021 10:24:03 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/21/2021 10:24:03 PM [MainThread  ] [INFO ]  Completed checking the page load process
+'08/21/2021 10:24:03 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/21/2021 10:26:03 PM [MainThread  ] [WARNI]  Unable to find Log In Button
+'08/21/2021 10:27:04 PM [MainThread  ] [INFO ]  Unable to find order tables: ? Log in not completed successfully
+'08/21/2021 10:27:05 PM [MainThread  ] [INFO ]  Refreshing and attempting logon again
+'08/21/2021 10:27:05 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/21/2021 10:27:05 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/21/2021 10:27:05 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/21/2021 10:27:05 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/21/2021 10:27:05 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/21/2021 10:27:05 PM [MainThread  ] [INFO ]  Completed checking the page load process
+'08/21/2021 10:27:05 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/21/2021 10:29:05 PM [MainThread  ] [WARNI]  Unable to find Log In Button
+'08/21/2021 10:30:06 PM [MainThread  ] [INFO ]  Unable to find order tables: ? Log in not completed successfully
+'08/21/2021 10:30:06 PM [MainThread  ] [INFO ]  Refreshing and attempting logon again
+'08/21/2021 10:30:06 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/21/2021 10:30:06 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/21/2021 10:30:06 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/21/2021 10:30:06 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/21/2021 10:30:06 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/21/2021 10:30:06 PM [MainThread  ] [INFO ]  Completed checking the page load process
+'08/21/2021 10:30:07 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/21/2021 10:30:12 PM [MainThread  ] [INFO ]  Completed log in process
+'08/21/2021 10:30:12 PM [MainThread  ] [INFO ]  Initializing browser instance
+'08/21/2021 10:30:13 PM [MainThread  ] [INFO ]  Navigating to home page
+'08/21/2021 10:30:16 PM [MainThread  ] [INFO ]  Attempting to log in
+'08/21/2021 10:30:16 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/21/2021 10:30:17 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/21/2021 10:30:17 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/21/2021 10:30:17 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/21/2021 10:30:17 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/21/2021 10:30:17 PM [MainThread  ] [INFO ]  Completed checking the page load process
+'08/21/2021 10:31:32 PM [MainThread  ] [INFO ]  Unable to find log in button
+Traceback (most recent call last):
+  File "sharkbot\tempBot.py", line 228, in enter_user_details
+  File "site-packages\selenium\webdriver\support\wait.py", line 80, in until
+selenium.common.exceptions.TimeoutException: Message: 
+
+'08/21/2021 10:31:35 PM [MainThread  ] [INFO ]  Initializing browser instance
+'08/21/2021 10:31:37 PM [MainThread  ] [INFO ]  Navigating to home page
+'08/21/2021 10:31:40 PM [MainThread  ] [INFO ]  Attempting to log in
+'08/21/2021 10:31:40 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/21/2021 10:31:40 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/21/2021 10:31:40 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/21/2021 10:31:40 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/21/2021 10:31:40 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/21/2021 10:31:40 PM [MainThread  ] [INFO ]  Completed checking the page load process
+'08/21/2021 10:31:41 PM [MainThread  ] [INFO ]  Log in form loaded
+'08/21/2021 10:31:41 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/21/2021 10:31:46 PM [MainThread  ] [INFO ]  Completed log in process
+'08/21/2021 10:31:46 PM [MainThread  ] [INFO ]  Initializing browser instance
+'08/21/2021 10:31:49 PM [MainThread  ] [INFO ]  Navigating to home page
+'08/21/2021 10:31:51 PM [MainThread  ] [INFO ]  Attempting to log in
+'08/21/2021 10:31:51 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/21/2021 10:31:51 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/21/2021 10:31:51 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/21/2021 10:31:51 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/21/2021 10:31:51 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/21/2021 10:31:51 PM [MainThread  ] [INFO ]  Completed checking the page load process
+'08/21/2021 10:31:52 PM [MainThread  ] [INFO ]  Log in form loaded
+'08/21/2021 10:31:52 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/21/2021 10:32:02 PM [MainThread  ] [INFO ]  Completed log in process
+'08/21/2021 10:32:02 PM [MainThread  ] [INFO ]  Initializing browser instance
+'08/21/2021 10:32:04 PM [MainThread  ] [INFO ]  Navigating to home page
+'08/21/2021 10:32:07 PM [MainThread  ] [INFO ]  Attempting to log in
+'08/21/2021 10:32:07 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/21/2021 10:32:07 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/21/2021 10:32:07 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/21/2021 10:32:07 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/21/2021 10:32:07 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/21/2021 10:32:07 PM [MainThread  ] [INFO ]  Completed checking the page load process
+'08/21/2021 10:32:08 PM [MainThread  ] [INFO ]  Log in form loaded
+'08/21/2021 10:32:08 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/21/2021 10:33:09 PM [MainThread  ] [INFO ]  Unable to find order tables: ? Log in not completed successfully
+'08/21/2021 10:33:10 PM [MainThread  ] [INFO ]  Refreshing and attempting logon again
+'08/21/2021 10:33:10 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/21/2021 10:33:10 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/21/2021 10:33:10 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/21/2021 10:33:10 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/21/2021 10:33:10 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/21/2021 10:33:10 PM [MainThread  ] [INFO ]  Completed checking the page load process
+'08/21/2021 10:33:10 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/21/2021 10:35:10 PM [MainThread  ] [WARNI]  Unable to find Log In Button
+'08/21/2021 10:36:11 PM [MainThread  ] [INFO ]  Unable to find order tables: ? Log in not completed successfully
+'08/21/2021 10:36:11 PM [MainThread  ] [INFO ]  Refreshing and attempting logon again
+'08/21/2021 10:36:11 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/21/2021 10:36:12 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/21/2021 10:36:12 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/21/2021 10:36:12 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/21/2021 10:36:12 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/21/2021 10:36:12 PM [MainThread  ] [INFO ]  Completed checking the page load process
+'08/21/2021 10:36:12 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/21/2021 10:38:12 PM [MainThread  ] [WARNI]  Unable to find Log In Button
+'08/21/2021 10:39:13 PM [MainThread  ] [INFO ]  Unable to find order tables: ? Log in not completed successfully
+'08/21/2021 10:39:13 PM [MainThread  ] [INFO ]  Refreshing and attempting logon again
+'08/21/2021 10:39:13 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/21/2021 10:39:13 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/21/2021 10:39:13 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/21/2021 10:39:13 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/21/2021 10:39:13 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/21/2021 10:39:13 PM [MainThread  ] [INFO ]  Completed checking the page load process
+'08/21/2021 10:39:13 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/21/2021 10:41:13 PM [MainThread  ] [WARNI]  Unable to find Log In Button
+'08/21/2021 10:42:14 PM [MainThread  ] [INFO ]  Unable to find order tables: ? Log in not completed successfully
+'08/21/2021 10:42:15 PM [MainThread  ] [INFO ]  Refreshing and attempting logon again
+'08/21/2021 10:42:15 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/21/2021 10:42:15 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/21/2021 10:42:15 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/21/2021 10:42:15 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/21/2021 10:42:15 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/21/2021 10:42:15 PM [MainThread  ] [INFO ]  Completed checking the page load process
+'08/21/2021 10:42:15 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/21/2021 10:44:16 PM [MainThread  ] [WARNI]  Unable to find Log In Button
+'08/21/2021 10:45:16 PM [MainThread  ] [INFO ]  Unable to find order tables: ? Log in not completed successfully
+'08/21/2021 10:45:17 PM [MainThread  ] [INFO ]  Refreshing and attempting logon again
+'08/21/2021 10:45:17 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/21/2021 10:45:17 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/21/2021 10:45:17 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/21/2021 10:45:17 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/21/2021 10:45:17 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/21/2021 10:45:17 PM [MainThread  ] [INFO ]  Completed checking the page load process
+'08/21/2021 10:45:17 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/21/2021 10:47:17 PM [MainThread  ] [WARNI]  Unable to find Log In Button
+'08/21/2021 10:48:18 PM [MainThread  ] [INFO ]  Unable to find order tables: ? Log in not completed successfully
+'08/21/2021 10:48:18 PM [MainThread  ] [INFO ]  Refreshing and attempting logon again
+'08/21/2021 10:48:18 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/21/2021 10:48:19 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/21/2021 10:48:19 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/21/2021 10:48:19 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/21/2021 10:48:19 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/21/2021 10:48:19 PM [MainThread  ] [INFO ]  Completed checking the page load process
+'08/21/2021 10:48:19 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/21/2021 10:50:19 PM [MainThread  ] [WARNI]  Unable to find Log In Button
+'08/21/2021 10:51:20 PM [MainThread  ] [INFO ]  Unable to find order tables: ? Log in not completed successfully
+'08/21/2021 10:51:20 PM [MainThread  ] [INFO ]  Refreshing and attempting logon again
+'08/21/2021 10:51:20 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/21/2021 10:51:20 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/21/2021 10:51:20 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/21/2021 10:51:20 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/21/2021 10:51:20 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/21/2021 10:51:20 PM [MainThread  ] [INFO ]  Completed checking the page load process
+'08/21/2021 10:51:21 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/21/2021 10:53:21 PM [MainThread  ] [WARNI]  Unable to find Log In Button
+'08/21/2021 10:54:22 PM [MainThread  ] [INFO ]  Unable to find order tables: ? Log in not completed successfully
+'08/21/2021 10:54:22 PM [MainThread  ] [INFO ]  Refreshing and attempting logon again
+'08/21/2021 10:54:22 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/21/2021 10:54:22 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/21/2021 10:54:22 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/21/2021 10:54:22 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/21/2021 10:54:22 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/21/2021 10:54:22 PM [MainThread  ] [INFO ]  Completed checking the page load process
+'08/21/2021 10:54:23 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/21/2021 10:56:23 PM [MainThread  ] [WARNI]  Unable to find Log In Button
+'08/21/2021 10:57:24 PM [MainThread  ] [INFO ]  Unable to find order tables: ? Log in not completed successfully
+'08/21/2021 10:57:24 PM [MainThread  ] [INFO ]  Refreshing and attempting logon again
+'08/21/2021 10:57:24 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/21/2021 10:57:24 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/21/2021 10:57:24 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/21/2021 10:57:24 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/21/2021 10:57:24 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/21/2021 10:57:24 PM [MainThread  ] [INFO ]  Completed checking the page load process
+'08/21/2021 10:57:24 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/21/2021 10:59:24 PM [MainThread  ] [WARNI]  Unable to find Log In Button
+'08/21/2021 11:00:25 PM [MainThread  ] [INFO ]  Unable to find order tables: ? Log in not completed successfully
+'08/21/2021 11:00:26 PM [MainThread  ] [INFO ]  Refreshing and attempting logon again
+'08/21/2021 11:00:26 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/21/2021 11:00:26 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/21/2021 11:00:26 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/21/2021 11:00:26 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/21/2021 11:00:26 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/21/2021 11:00:26 PM [MainThread  ] [INFO ]  Completed checking the page load process
+'08/21/2021 11:00:26 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/21/2021 11:02:26 PM [MainThread  ] [WARNI]  Unable to find Log In Button
+'08/21/2021 11:03:27 PM [MainThread  ] [INFO ]  Unable to find order tables: ? Log in not completed successfully
+'08/21/2021 11:03:27 PM [MainThread  ] [INFO ]  Refreshing and attempting logon again
+'08/21/2021 11:03:27 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/21/2021 11:03:27 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/21/2021 11:03:27 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/21/2021 11:03:27 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/21/2021 11:03:27 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/21/2021 11:03:27 PM [MainThread  ] [INFO ]  Completed checking the page load process
+'08/21/2021 11:03:27 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/21/2021 11:05:28 PM [MainThread  ] [WARNI]  Unable to find Log In Button
+'08/21/2021 11:06:28 PM [MainThread  ] [INFO ]  Unable to find order tables: ? Log in not completed successfully
+'08/21/2021 11:06:29 PM [MainThread  ] [INFO ]  Refreshing and attempting logon again
+'08/21/2021 11:06:29 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/21/2021 11:06:29 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/21/2021 11:06:29 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/21/2021 11:06:29 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/21/2021 11:06:29 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/21/2021 11:06:29 PM [MainThread  ] [INFO ]  Completed checking the page load process
+'08/21/2021 11:06:29 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/21/2021 11:08:29 PM [MainThread  ] [WARNI]  Unable to find Log In Button
+'08/21/2021 11:09:30 PM [MainThread  ] [INFO ]  Unable to find order tables: ? Log in not completed successfully
+'08/21/2021 11:09:31 PM [MainThread  ] [INFO ]  Refreshing and attempting logon again
+'08/21/2021 11:09:31 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/21/2021 11:09:31 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/21/2021 11:09:31 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/21/2021 11:09:31 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/21/2021 11:09:31 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/21/2021 11:09:31 PM [MainThread  ] [INFO ]  Completed checking the page load process
+'08/21/2021 11:09:31 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/21/2021 11:11:24 PM [MainThread  ] [INFO ]  Completed log in process
+'08/21/2021 11:11:24 PM [MainThread  ] [INFO ]  Initializing browser instance
+'08/21/2021 11:11:26 PM [MainThread  ] [INFO ]  Navigating to home page
+'08/21/2021 11:11:29 PM [MainThread  ] [INFO ]  Attempting to log in
+'08/21/2021 11:11:29 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/21/2021 11:11:29 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/21/2021 11:11:29 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/21/2021 11:11:29 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/21/2021 11:11:29 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/21/2021 11:11:29 PM [MainThread  ] [INFO ]  Completed checking the page load process
+'08/21/2021 11:12:44 PM [MainThread  ] [INFO ]  Unable to find log in button
+Traceback (most recent call last):
+  File "sharkbot\tempBot.py", line 228, in enter_user_details
+  File "site-packages\selenium\webdriver\support\wait.py", line 80, in until
+selenium.common.exceptions.TimeoutException: Message: 
+
+'08/21/2021 11:12:49 PM [MainThread  ] [WARNI]  Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000000000418C280>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/14182bd37771b4494e470ceb4577b183/elements
+'08/21/2021 11:12:51 PM [MainThread  ] [WARNI]  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000000000418C130>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/14182bd37771b4494e470ceb4577b183/elements
+'08/21/2021 11:12:53 PM [MainThread  ] [WARNI]  Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000000000417FA90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/14182bd37771b4494e470ceb4577b183/elements
+Traceback (most recent call last):
+  File "site-packages\urllib3\connection.py", line 169, in _new_conn
+  File "site-packages\urllib3\util\connection.py", line 96, in create_connection
+  File "site-packages\urllib3\util\connection.py", line 86, in create_connection
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "site-packages\urllib3\connectionpool.py", line 699, in urlopen
+  File "site-packages\urllib3\connectionpool.py", line 394, in _make_request
+  File "site-packages\urllib3\connection.py", line 234, in request
+  File "http\client.py", line 1255, in request
+  File "http\client.py", line 1301, in _send_request
+  File "http\client.py", line 1250, in endheaders
+  File "http\client.py", line 1010, in _send_output
+  File "http\client.py", line 950, in send
+  File "site-packages\urllib3\connection.py", line 200, in connect
+  File "site-packages\urllib3\connection.py", line 181, in _new_conn
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000000000418C910>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "shark_gui.py", line 393, in launch_browser
+  File "shark_gui.py", line 445, in initialize_bots
+  File "sharkbot\tempBot.py", line 519, in start_main_bot
+  File "sharkbot\tempBot.py", line 265, in fetch_orders
+  File "site-packages\selenium\webdriver\support\wait.py", line 71, in until
+  File "site-packages\selenium\webdriver\support\expected_conditions.py", line 174, in __call__
+  File "site-packages\selenium\webdriver\support\expected_conditions.py", line 420, in _find_elements
+  File "site-packages\selenium\webdriver\remote\webdriver.py", line 1005, in find_elements
+  File "site-packages\selenium\webdriver\remote\webdriver.py", line 319, in execute
+  File "site-packages\selenium\webdriver\remote\remote_connection.py", line 374, in execute
+  File "site-packages\selenium\webdriver\remote\remote_connection.py", line 397, in _request
+  File "site-packages\urllib3\request.py", line 78, in request
+  File "site-packages\urllib3\request.py", line 170, in request_encode_body
+  File "site-packages\urllib3\poolmanager.py", line 375, in urlopen
+  File "site-packages\urllib3\connectionpool.py", line 783, in urlopen
+  File "site-packages\urllib3\connectionpool.py", line 783, in urlopen
+  File "site-packages\urllib3\connectionpool.py", line 783, in urlopen
+  File "site-packages\urllib3\connectionpool.py", line 755, in urlopen
+  File "site-packages\urllib3\util\retry.py", line 573, in increment
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=64507): Max retries exceeded with url: /session/14182bd37771b4494e470ceb4577b183/elements (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000000000418C910>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+'08/21/2021 11:12:59 PM [MainThread  ] [WARNI]  Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000000000418CE80>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/14182bd37771b4494e470ceb4577b183
+'08/21/2021 11:13:02 PM [MainThread  ] [WARNI]  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000000000418C7F0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/14182bd37771b4494e470ceb4577b183
+'08/21/2021 11:13:04 PM [MainThread  ] [WARNI]  Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000000000418CFD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/14182bd37771b4494e470ceb4577b183
+'08/21/2021 11:13:12 PM [MainThread  ] [WARNI]  Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000000000673E400>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/ae24a14c25137e73817f612535c79308
+'08/21/2021 11:13:14 PM [MainThread  ] [WARNI]  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000006410D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/ae24a14c25137e73817f612535c79308
+'08/21/2021 11:13:17 PM [MainThread  ] [WARNI]  Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000000000641280>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/ae24a14c25137e73817f612535c79308
+[INFO] Successfully created the directory C:\Users\Admin\Documents\projects\bots\shark\bot\dist\logs 
+'08/22/2021 12:37:25 AM [MainThread  ] [INFO ]  [Chrome Driver path]:C:\Users\Admin\AppData\Local\Temp\_MEI423122\driver/chromedriver.exe
+'08/22/2021 12:37:25 AM [MainThread  ] [INFO ]  Successfully fetched client messages
+'08/22/2021 12:37:25 AM [MainThread  ] [INFO ]  Logger and configuration details successfully set
+'08/22/2021 12:43:03 AM [MainThread  ] [INFO ]  Executing trial version. You have 138 days remaining.
+'08/22/2021 12:43:03 AM [MainThread  ] [INFO ]  Setting up Bidders......
+'08/22/2021 12:43:03 AM [MainThread  ] [INFO ]  ComboBox Value 6 Bidders
+'08/22/2021 12:43:03 AM [MainThread  ] [INFO ]  Initializing browser instance
+'08/22/2021 12:43:06 AM [MainThread  ] [INFO ]  Navigating to home page
+'08/22/2021 12:43:10 AM [MainThread  ] [INFO ]  Attempting to log in
+'08/22/2021 12:43:10 AM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/22/2021 12:43:10 AM [MainThread  ] [INFO ]  Form button ready to click
+'08/22/2021 12:43:10 AM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/22/2021 12:43:10 AM [MainThread  ] [INFO ]  Executing page is loading function
+'08/22/2021 12:43:10 AM [MainThread  ] [INFO ]  Page loading has completed
+'08/22/2021 12:43:10 AM [MainThread  ] [INFO ]  Completed checking the page load process
+Traceback (most recent call last):
+  File "shark_gui.py", line 393, in launch_browser
+  File "shark_gui.py", line 440, in initialize_bots
+  File "sharkbot\tempBot.py", line 480, in start_bot
+  File "sharkbot\tempBot.py", line 220, in load_popup
+  File "site-packages\selenium\webdriver\remote\webelement.py", line 477, in send_keys
+  File "site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+  File "site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+  File "site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=92.0.4515.159)
+
+[INFO] Successfully created the directory C:\Users\Admin\Documents\projects\bots\shark\bot\dist\logs 
+'08/22/2021 12:45:01 AM [MainThread  ] [INFO ]  [Chrome Driver path]:C:\Users\Admin\AppData\Local\Temp\_MEI74522\driver/chromedriver.exe
+'08/22/2021 12:45:01 AM [MainThread  ] [INFO ]  Successfully fetched client messages
+'08/22/2021 12:45:01 AM [MainThread  ] [INFO ]  Logger and configuration details successfully set
+'08/22/2021 12:45:06 AM [MainThread  ] [INFO ]  Executing trial version. You have 138 days remaining.
+'08/22/2021 12:45:06 AM [MainThread  ] [INFO ]  Setting up Bidders......
+'08/22/2021 12:45:06 AM [MainThread  ] [INFO ]  ComboBox Value 6 Bidders
+'08/22/2021 12:45:06 AM [MainThread  ] [INFO ]  Initializing browser instance
+'08/22/2021 12:45:08 AM [MainThread  ] [INFO ]  Navigating to home page
+'08/22/2021 12:45:10 AM [MainThread  ] [INFO ]  Attempting to log in
+'08/22/2021 12:45:10 AM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/22/2021 12:45:10 AM [MainThread  ] [INFO ]  Form button ready to click
+'08/22/2021 12:45:10 AM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/22/2021 12:45:10 AM [MainThread  ] [INFO ]  Executing page is loading function
+'08/22/2021 12:45:10 AM [MainThread  ] [INFO ]  Page loading has completed
+'08/22/2021 12:45:10 AM [MainThread  ] [INFO ]  Completed checking the page load process
+Traceback (most recent call last):
+  File "shark_gui.py", line 393, in launch_browser
+  File "shark_gui.py", line 440, in initialize_bots
+  File "sharkbot\tempBot.py", line 480, in start_bot
+  File "sharkbot\tempBot.py", line 220, in load_popup
+  File "site-packages\selenium\webdriver\remote\webelement.py", line 477, in send_keys
+  File "site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+  File "site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+  File "site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=92.0.4515.159)
+
+[INFO] Successfully created the directory C:\Users\Admin\Documents\projects\bots\shark\bot\dist\logs 
+'08/23/2021 09:20:31 PM [MainThread  ] [INFO ]  [Chrome Driver path]:C:\Users\Admin\AppData\Local\Temp\_MEI230842\driver/chromedriver.exe
+'08/23/2021 09:20:31 PM [MainThread  ] [INFO ]  Successfully fetched client messages
+'08/23/2021 09:20:31 PM [MainThread  ] [INFO ]  Logger and configuration details successfully set
+'08/23/2021 09:21:00 PM [MainThread  ] [INFO ]  Executing trial version. You have 137 days remaining.
+'08/23/2021 09:21:00 PM [MainThread  ] [INFO ]  Setting up Bidders......
+'08/23/2021 09:21:00 PM [MainThread  ] [INFO ]  ComboBox Value 6 Bidders
+'08/23/2021 09:21:00 PM [MainThread  ] [INFO ]  Initializing browser instance
+'08/23/2021 09:21:02 PM [MainThread  ] [INFO ]  Navigating to home page
+'08/23/2021 09:21:17 PM [MainThread  ] [INFO ]  Attempting to log in
+'08/23/2021 09:21:17 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/23/2021 09:21:17 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/23/2021 09:21:17 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/23/2021 09:21:17 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/23/2021 09:21:17 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/23/2021 09:21:17 PM [MainThread  ] [INFO ]  Completed checking the page load process, proceeding to click button
+'08/23/2021 09:21:18 PM [MainThread  ] [INFO ]  Log in form loaded
+'08/23/2021 09:21:18 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/23/2021 09:21:33 PM [MainThread  ] [INFO ]  Completed log in process
+'08/23/2021 09:21:33 PM [MainThread  ] [INFO ]  Initializing browser instance
+'08/23/2021 09:21:36 PM [MainThread  ] [INFO ]  Navigating to home page
+'08/23/2021 09:21:50 PM [MainThread  ] [INFO ]  Attempting to log in
+'08/23/2021 09:21:50 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/23/2021 09:21:50 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/23/2021 09:21:50 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/23/2021 09:21:50 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/23/2021 09:21:50 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/23/2021 09:21:50 PM [MainThread  ] [INFO ]  Completed checking the page load process, proceeding to click button
+'08/23/2021 09:21:50 PM [MainThread  ] [INFO ]  Log in form loaded
+'08/23/2021 09:21:50 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/23/2021 09:22:06 PM [MainThread  ] [INFO ]  Completed log in process
+'08/23/2021 09:22:06 PM [MainThread  ] [INFO ]  Initializing browser instance
+'08/23/2021 09:22:09 PM [MainThread  ] [INFO ]  Navigating to home page
+'08/23/2021 09:22:36 PM [MainThread  ] [INFO ]  Attempting to log in
+'08/23/2021 09:22:36 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/23/2021 09:22:36 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/23/2021 09:22:36 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/23/2021 09:22:36 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/23/2021 09:22:36 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/23/2021 09:22:36 PM [MainThread  ] [INFO ]  Completed checking the page load process, proceeding to click button
+'08/23/2021 09:22:36 PM [MainThread  ] [INFO ]  Log in form loaded
+'08/23/2021 09:22:36 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/23/2021 09:23:42 PM [MainThread  ] [INFO ]  Unable to find order tables: ? Log in not completed successfully
+'08/23/2021 09:23:45 PM [MainThread  ] [INFO ]  Refreshing and attempting logon again
+'08/23/2021 09:23:45 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/23/2021 09:23:45 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/23/2021 09:23:45 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/23/2021 09:23:45 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/23/2021 09:23:45 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/23/2021 09:23:45 PM [MainThread  ] [INFO ]  Completed checking the page load process, proceeding to click button
+'08/23/2021 09:23:45 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/23/2021 09:23:57 PM [MainThread  ] [INFO ]  Completed log in process
+'08/23/2021 09:23:57 PM [MainThread  ] [INFO ]  Initializing browser instance
+'08/23/2021 09:23:59 PM [MainThread  ] [INFO ]  Navigating to home page
+'08/23/2021 09:24:17 PM [MainThread  ] [INFO ]  Attempting to log in
+'08/23/2021 09:24:17 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/23/2021 09:24:17 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/23/2021 09:24:17 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/23/2021 09:24:17 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/23/2021 09:24:17 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/23/2021 09:24:17 PM [MainThread  ] [INFO ]  Completed checking the page load process, proceeding to click button
+'08/23/2021 09:24:18 PM [MainThread  ] [INFO ]  Log in form loaded
+'08/23/2021 09:24:18 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/23/2021 09:24:26 PM [MainThread  ] [INFO ]  Completed log in process
+'08/23/2021 09:24:26 PM [MainThread  ] [INFO ]  Initializing browser instance
+'08/23/2021 09:24:28 PM [MainThread  ] [INFO ]  Navigating to home page
+'08/23/2021 09:24:42 PM [MainThread  ] [INFO ]  Attempting to log in
+'08/23/2021 09:24:42 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/23/2021 09:24:42 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/23/2021 09:24:42 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/23/2021 09:24:42 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/23/2021 09:24:42 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/23/2021 09:24:42 PM [MainThread  ] [INFO ]  Completed checking the page load process, proceeding to click button
+'08/23/2021 09:24:43 PM [MainThread  ] [INFO ]  Log in form loaded
+'08/23/2021 09:24:43 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/23/2021 09:24:54 PM [MainThread  ] [INFO ]  Completed log in process
+'08/23/2021 09:24:54 PM [MainThread  ] [INFO ]  Initializing browser instance
+'08/23/2021 09:24:57 PM [MainThread  ] [INFO ]  Navigating to home page
+'08/23/2021 09:25:14 PM [MainThread  ] [INFO ]  Attempting to log in
+'08/23/2021 09:25:14 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/23/2021 09:25:14 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/23/2021 09:25:14 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/23/2021 09:25:14 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/23/2021 09:25:14 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/23/2021 09:25:14 PM [MainThread  ] [INFO ]  Completed checking the page load process, proceeding to click button
+'08/23/2021 09:25:14 PM [MainThread  ] [INFO ]  Log in form loaded
+'08/23/2021 09:25:14 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/23/2021 09:25:26 PM [MainThread  ] [INFO ]  Completed log in process
+'08/23/2021 09:25:26 PM [MainThread  ] [INFO ]  Initializing browser instance
+'08/23/2021 09:25:28 PM [MainThread  ] [INFO ]  Navigating to home page
+'08/23/2021 09:25:50 PM [MainThread  ] [INFO ]  Attempting to log in
+'08/23/2021 09:25:50 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/23/2021 09:25:50 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/23/2021 09:25:50 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/23/2021 09:25:50 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/23/2021 09:25:50 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/23/2021 09:25:50 PM [MainThread  ] [INFO ]  Completed checking the page load process, proceeding to click button
+'08/23/2021 09:26:20 PM [MainThread  ] [INFO ]  Unable to find log in button
+Traceback (most recent call last):
+  File "sharkbot\tempBot.py", line 238, in enter_user_details
+  File "site-packages\selenium\webdriver\support\wait.py", line 80, in until
+selenium.common.exceptions.TimeoutException: Message: 
+
+'08/23/2021 09:26:20 PM [MainThread  ] [INFO ]  Attempting to reclick My account button from exception code
+'08/23/2021 09:26:20 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/23/2021 09:26:33 PM [MainThread  ] [INFO ]  Completed log in process
+'08/23/2021 09:26:34 PM [MainThread  ] [INFO ]  51 orders initially fetched
+[INFO] Successfully created the directory C:\Users\Admin\Documents\projects\bots\shark\bot\dist\logs 
+'08/23/2021 09:41:09 PM [MainThread  ] [INFO ]  [Chrome Driver path]:C:\Users\Admin\AppData\Local\Temp\_MEI194802\driver/chromedriver.exe
+'08/23/2021 09:41:09 PM [MainThread  ] [INFO ]  Successfully fetched client messages
+'08/23/2021 09:41:09 PM [MainThread  ] [INFO ]  Logger and configuration details successfully set
+'08/23/2021 09:41:16 PM [MainThread  ] [INFO ]  Executing trial version. You have 137 days remaining.
+'08/23/2021 09:41:16 PM [MainThread  ] [INFO ]  Setting up Bidders......
+'08/23/2021 09:41:16 PM [MainThread  ] [INFO ]  ComboBox Value 6 Bidders
+'08/23/2021 09:41:16 PM [MainThread  ] [INFO ]  Initializing browser instance
+'08/23/2021 09:41:19 PM [MainThread  ] [INFO ]  Navigating to home page
+'08/23/2021 09:41:36 PM [MainThread  ] [INFO ]  Attempting to log in
+'08/23/2021 09:41:36 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/23/2021 09:41:36 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/23/2021 09:41:36 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/23/2021 09:41:36 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/23/2021 09:41:36 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/23/2021 09:41:36 PM [MainThread  ] [INFO ]  Completed checking the page load process, proceeding to click button
+'08/23/2021 09:41:36 PM [MainThread  ] [INFO ]  Log in form loaded
+'08/23/2021 09:41:36 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/23/2021 09:41:48 PM [MainThread  ] [INFO ]  Completed log in process
+'08/23/2021 09:41:48 PM [MainThread  ] [INFO ]  Initializing browser instance
+'08/23/2021 09:41:52 PM [MainThread  ] [INFO ]  Navigating to home page
+'08/23/2021 09:42:09 PM [MainThread  ] [INFO ]  Attempting to log in
+'08/23/2021 09:42:09 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/23/2021 09:42:09 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/23/2021 09:42:09 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/23/2021 09:42:09 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/23/2021 09:42:09 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/23/2021 09:42:09 PM [MainThread  ] [INFO ]  Completed checking the page load process, proceeding to click button
+'08/23/2021 09:42:09 PM [MainThread  ] [INFO ]  Log in form loaded
+'08/23/2021 09:42:09 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/23/2021 09:43:10 PM [MainThread  ] [INFO ]  Unable to find order tables: ? Log in not completed successfully
+'08/23/2021 09:43:11 PM [MainThread  ] [INFO ]  Refreshing and attempting logon again
+'08/23/2021 09:43:11 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/23/2021 09:43:11 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/23/2021 09:43:11 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/23/2021 09:43:11 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/23/2021 09:43:11 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/23/2021 09:43:11 PM [MainThread  ] [INFO ]  Completed checking the page load process, proceeding to click button
+'08/23/2021 09:43:12 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/23/2021 09:45:12 PM [MainThread  ] [WARNI]  Unable to find Log In Button
+'08/23/2021 09:46:13 PM [MainThread  ] [INFO ]  Unable to find order tables: ? Log in not completed successfully
+'08/23/2021 09:46:16 PM [MainThread  ] [INFO ]  Refreshing and attempting logon again
+'08/23/2021 09:46:16 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/23/2021 09:46:16 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/23/2021 09:46:16 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/23/2021 09:46:16 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/23/2021 09:46:16 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/23/2021 09:46:16 PM [MainThread  ] [INFO ]  Completed checking the page load process, proceeding to click button
+'08/23/2021 09:46:16 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/23/2021 09:48:17 PM [MainThread  ] [WARNI]  Unable to find Log In Button
+'08/23/2021 09:49:17 PM [MainThread  ] [INFO ]  Unable to find order tables: ? Log in not completed successfully
+'08/23/2021 09:49:19 PM [MainThread  ] [INFO ]  Refreshing and attempting logon again
+'08/23/2021 09:49:19 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/23/2021 09:49:19 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/23/2021 09:49:19 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/23/2021 09:49:19 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/23/2021 09:49:19 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/23/2021 09:49:19 PM [MainThread  ] [INFO ]  Completed checking the page load process, proceeding to click button
+'08/23/2021 09:49:19 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/23/2021 09:51:19 PM [MainThread  ] [WARNI]  Unable to find Log In Button
+'08/23/2021 09:52:20 PM [MainThread  ] [INFO ]  Unable to find order tables: ? Log in not completed successfully
+'08/23/2021 09:52:22 PM [MainThread  ] [INFO ]  Refreshing and attempting logon again
+'08/23/2021 09:52:22 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/23/2021 09:52:22 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/23/2021 09:52:22 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/23/2021 09:52:22 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/23/2021 09:52:22 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/23/2021 09:52:22 PM [MainThread  ] [INFO ]  Completed checking the page load process, proceeding to click button
+'08/23/2021 09:52:22 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/23/2021 09:54:22 PM [MainThread  ] [WARNI]  Unable to find Log In Button
+'08/23/2021 09:55:24 PM [MainThread  ] [INFO ]  Unable to find order tables: ? Log in not completed successfully
+'08/23/2021 09:55:25 PM [MainThread  ] [INFO ]  Refreshing and attempting logon again
+'08/23/2021 09:55:25 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/23/2021 09:55:25 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/23/2021 09:55:25 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/23/2021 09:55:25 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/23/2021 09:55:25 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/23/2021 09:55:25 PM [MainThread  ] [INFO ]  Completed checking the page load process, proceeding to click button
+'08/23/2021 09:55:25 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/23/2021 09:57:25 PM [MainThread  ] [WARNI]  Unable to find Log In Button
+'08/23/2021 09:58:26 PM [MainThread  ] [INFO ]  Unable to find order tables: ? Log in not completed successfully
+'08/23/2021 09:58:29 PM [MainThread  ] [INFO ]  Refreshing and attempting logon again
+'08/23/2021 09:58:29 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/23/2021 09:58:29 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/23/2021 09:58:29 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/23/2021 09:58:29 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/23/2021 09:58:29 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/23/2021 09:58:29 PM [MainThread  ] [INFO ]  Completed checking the page load process, proceeding to click button
+'08/23/2021 09:58:30 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/23/2021 09:58:43 PM [MainThread  ] [INFO ]  Completed log in process
+'08/23/2021 09:58:43 PM [MainThread  ] [INFO ]  Initializing browser instance
+'08/23/2021 09:58:45 PM [MainThread  ] [INFO ]  Navigating to home page
+'08/23/2021 09:59:00 PM [MainThread  ] [INFO ]  Attempting to log in
+'08/23/2021 09:59:00 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/23/2021 09:59:00 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/23/2021 09:59:00 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/23/2021 09:59:00 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/23/2021 09:59:00 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/23/2021 09:59:00 PM [MainThread  ] [INFO ]  Completed checking the page load process, proceeding to click button
+'08/23/2021 09:59:00 PM [MainThread  ] [INFO ]  Log in form loaded
+'08/23/2021 09:59:00 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/23/2021 09:59:08 PM [MainThread  ] [INFO ]  Completed log in process
+'08/23/2021 09:59:08 PM [MainThread  ] [INFO ]  Initializing browser instance
+'08/23/2021 09:59:10 PM [MainThread  ] [INFO ]  Navigating to home page
+'08/23/2021 09:59:27 PM [MainThread  ] [INFO ]  Attempting to log in
+'08/23/2021 09:59:27 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/23/2021 09:59:27 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/23/2021 09:59:27 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/23/2021 09:59:27 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/23/2021 09:59:27 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/23/2021 09:59:27 PM [MainThread  ] [INFO ]  Completed checking the page load process, proceeding to click button
+'08/23/2021 09:59:27 PM [MainThread  ] [INFO ]  Log in form loaded
+'08/23/2021 09:59:27 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/23/2021 09:59:36 PM [MainThread  ] [INFO ]  Completed log in process
+'08/23/2021 09:59:36 PM [MainThread  ] [INFO ]  Initializing browser instance
+'08/23/2021 09:59:37 PM [MainThread  ] [INFO ]  Navigating to home page
+'08/23/2021 09:59:53 PM [MainThread  ] [INFO ]  Attempting to log in
+'08/23/2021 09:59:53 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/23/2021 09:59:53 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/23/2021 09:59:53 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/23/2021 09:59:53 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/23/2021 09:59:53 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/23/2021 09:59:53 PM [MainThread  ] [INFO ]  Completed checking the page load process, proceeding to click button
+'08/23/2021 09:59:53 PM [MainThread  ] [INFO ]  Log in form loaded
+'08/23/2021 09:59:53 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/23/2021 10:00:04 PM [MainThread  ] [INFO ]  Completed log in process
+'08/23/2021 10:00:04 PM [MainThread  ] [INFO ]  Initializing browser instance
+'08/23/2021 10:00:05 PM [MainThread  ] [INFO ]  Navigating to home page
+'08/23/2021 10:00:19 PM [MainThread  ] [INFO ]  Attempting to log in
+'08/23/2021 10:00:19 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/23/2021 10:00:19 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/23/2021 10:00:19 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/23/2021 10:00:19 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/23/2021 10:00:19 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/23/2021 10:00:19 PM [MainThread  ] [INFO ]  Completed checking the page load process, proceeding to click button
+'08/23/2021 10:00:19 PM [MainThread  ] [INFO ]  Log in form loaded
+'08/23/2021 10:00:19 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/23/2021 10:00:31 PM [MainThread  ] [INFO ]  Completed log in process
+'08/23/2021 10:00:31 PM [MainThread  ] [INFO ]  Initializing browser instance
+'08/23/2021 10:00:33 PM [MainThread  ] [INFO ]  Navigating to home page
+'08/23/2021 10:00:43 PM [MainThread  ] [INFO ]  Attempting to log in
+'08/23/2021 10:00:43 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/23/2021 10:00:43 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/23/2021 10:00:43 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/23/2021 10:00:43 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/23/2021 10:00:43 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/23/2021 10:00:43 PM [MainThread  ] [INFO ]  Completed checking the page load process, proceeding to click button
+'08/23/2021 10:01:14 PM [MainThread  ] [INFO ]  Unable to find log in button
+Traceback (most recent call last):
+  File "sharkbot\tempBot.py", line 238, in enter_user_details
+  File "site-packages\selenium\webdriver\support\wait.py", line 80, in until
+selenium.common.exceptions.TimeoutException: Message: 
+
+'08/23/2021 10:01:14 PM [MainThread  ] [INFO ]  Attempting to reclick My account button from exception code
+'08/23/2021 10:01:14 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/23/2021 10:01:25 PM [MainThread  ] [INFO ]  Completed log in process
+'08/23/2021 10:01:26 PM [MainThread  ] [INFO ]  51 orders initially fetched
+[INFO] Successfully created the directory C:\Users\Admin\Documents\projects\bots\shark\bot\dist\logs 
+'08/23/2021 10:06:12 PM [MainThread  ] [INFO ]  [Chrome Driver path]:C:\Users\Admin\AppData\Local\Temp\_MEI405122\driver/chromedriver.exe
+'08/23/2021 10:06:12 PM [MainThread  ] [INFO ]  Successfully fetched client messages
+'08/23/2021 10:06:12 PM [MainThread  ] [INFO ]  Logger and configuration details successfully set
+'08/23/2021 10:06:19 PM [MainThread  ] [INFO ]  Executing trial version. You have 137 days remaining.
+'08/23/2021 10:06:19 PM [MainThread  ] [INFO ]  Setting up Bidders......
+'08/23/2021 10:06:19 PM [MainThread  ] [INFO ]  ComboBox Value 6 Bidders
+'08/23/2021 10:06:19 PM [MainThread  ] [INFO ]  Initializing browser instance
+'08/23/2021 10:06:21 PM [MainThread  ] [INFO ]  Navigating to home page
+'08/23/2021 10:06:27 PM [MainThread  ] [INFO ]  Attempting to log in
+'08/23/2021 10:06:27 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/23/2021 10:06:27 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/23/2021 10:06:27 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/23/2021 10:06:27 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/23/2021 10:06:27 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/23/2021 10:06:27 PM [MainThread  ] [INFO ]  Completed checking the page load process, proceeding to click button
+'08/23/2021 10:06:27 PM [MainThread  ] [INFO ]  Log in form loaded
+'08/23/2021 10:06:27 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/23/2021 10:07:13 PM [MainThread  ] [INFO ]  Unable to find order tables: ? Log in not completed successfully
+'08/23/2021 10:07:14 PM [MainThread  ] [INFO ]  Refreshing and attempting logon again
+'08/23/2021 10:07:14 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/23/2021 10:07:14 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/23/2021 10:07:14 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/23/2021 10:07:14 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/23/2021 10:07:14 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/23/2021 10:07:14 PM [MainThread  ] [INFO ]  Completed checking the page load process, proceeding to click button
+'08/23/2021 10:07:14 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/23/2021 10:07:59 PM [MainThread  ] [WARNI]  Unable to find Log In Button
+'08/23/2021 10:08:45 PM [MainThread  ] [INFO ]  Unable to find order tables: ? Log in not completed successfully
+'08/23/2021 10:08:46 PM [MainThread  ] [INFO ]  Refreshing and attempting logon again
+'08/23/2021 10:08:46 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/23/2021 10:08:46 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/23/2021 10:08:46 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/23/2021 10:08:46 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/23/2021 10:08:46 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/23/2021 10:08:46 PM [MainThread  ] [INFO ]  Completed checking the page load process, proceeding to click button
+'08/23/2021 10:08:46 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/23/2021 10:09:32 PM [MainThread  ] [WARNI]  Unable to find Log In Button
+'08/23/2021 10:10:18 PM [MainThread  ] [INFO ]  Unable to find order tables: ? Log in not completed successfully
+'08/23/2021 10:10:19 PM [MainThread  ] [INFO ]  Refreshing and attempting logon again
+'08/23/2021 10:10:19 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/23/2021 10:10:19 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/23/2021 10:10:19 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/23/2021 10:10:19 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/23/2021 10:10:19 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/23/2021 10:10:19 PM [MainThread  ] [INFO ]  Completed checking the page load process, proceeding to click button
+'08/23/2021 10:10:19 PM [MainThread  ] [INFO ]  Logging into Shark...
+[INFO] Successfully created the directory C:\Users\Admin\Documents\projects\bots\shark\bot\dist\logs 
+'08/23/2021 10:11:15 PM [MainThread  ] [INFO ]  [Chrome Driver path]:C:\Users\Admin\AppData\Local\Temp\_MEI107962\driver/chromedriver.exe
+'08/23/2021 10:11:15 PM [MainThread  ] [INFO ]  Successfully fetched client messages
+'08/23/2021 10:11:15 PM [MainThread  ] [INFO ]  Logger and configuration details successfully set
+'08/23/2021 10:11:32 PM [MainThread  ] [INFO ]  Executing trial version. You have 137 days remaining.
+'08/23/2021 10:11:32 PM [MainThread  ] [INFO ]  Setting up Bidders......
+'08/23/2021 10:11:32 PM [MainThread  ] [INFO ]  ComboBox Value 6 Bidders
+'08/23/2021 10:11:32 PM [MainThread  ] [INFO ]  Initializing browser instance
+'08/23/2021 10:11:34 PM [MainThread  ] [INFO ]  Navigating to home page
+'08/23/2021 10:12:00 PM [MainThread  ] [INFO ]  Attempting to log in
+'08/23/2021 10:12:00 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/23/2021 10:12:00 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/23/2021 10:12:00 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/23/2021 10:12:00 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/23/2021 10:12:00 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/23/2021 10:12:00 PM [MainThread  ] [INFO ]  Completed checking the page load process, proceeding to click button
+'08/23/2021 10:12:00 PM [MainThread  ] [INFO ]  Log in form loaded
+'08/23/2021 10:12:00 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/23/2021 10:12:11 PM [MainThread  ] [INFO ]  Completed log in process
+'08/23/2021 10:12:11 PM [MainThread  ] [INFO ]  Initializing browser instance
+'08/23/2021 10:12:13 PM [MainThread  ] [INFO ]  Navigating to home page
+'08/23/2021 10:12:28 PM [MainThread  ] [INFO ]  Attempting to log in
+'08/23/2021 10:12:28 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/23/2021 10:12:28 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/23/2021 10:12:28 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/23/2021 10:12:28 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/23/2021 10:12:28 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/23/2021 10:12:28 PM [MainThread  ] [INFO ]  Completed checking the page load process, proceeding to click button
+'08/23/2021 10:12:28 PM [MainThread  ] [INFO ]  Log in form loaded
+'08/23/2021 10:12:28 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/23/2021 10:12:42 PM [MainThread  ] [INFO ]  Completed log in process
+'08/23/2021 10:12:42 PM [MainThread  ] [INFO ]  Initializing browser instance
+'08/23/2021 10:12:44 PM [MainThread  ] [INFO ]  Navigating to home page
+'08/23/2021 10:13:04 PM [MainThread  ] [INFO ]  Attempting to log in
+'08/23/2021 10:13:04 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/23/2021 10:13:04 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/23/2021 10:13:04 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/23/2021 10:13:04 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/23/2021 10:13:04 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/23/2021 10:13:04 PM [MainThread  ] [INFO ]  Completed checking the page load process, proceeding to click button
+'08/23/2021 10:13:04 PM [MainThread  ] [INFO ]  Log in form loaded
+'08/23/2021 10:13:04 PM [MainThread  ] [INFO ]  Logging into Shark...
+[INFO] Successfully created the directory C:\Users\Admin\Documents\projects\bots\shark\bot\dist\logs 
+'08/23/2021 10:58:53 PM [MainThread  ] [INFO ]  [Chrome Driver path]:C:\Users\Admin\AppData\Local\Temp\_MEI561442\driver/chromedriver.exe
+'08/23/2021 10:58:53 PM [MainThread  ] [INFO ]  Successfully fetched client messages
+'08/23/2021 10:58:53 PM [MainThread  ] [INFO ]  Logger and configuration details successfully set
+'08/23/2021 10:58:58 PM [MainThread  ] [INFO ]  Executing trial version. You have 137 days remaining.
+'08/23/2021 10:58:58 PM [MainThread  ] [INFO ]  Setting up Bidders......
+'08/23/2021 10:58:58 PM [MainThread  ] [INFO ]  ComboBox Value 6 Bidders
+'08/23/2021 10:58:58 PM [MainThread  ] [INFO ]  Initializing browser instance
+'08/23/2021 10:59:01 PM [MainThread  ] [INFO ]  Navigating to home page
+'08/23/2021 10:59:09 PM [MainThread  ] [INFO ]  Attempting to log in
+'08/23/2021 10:59:09 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/23/2021 10:59:10 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/23/2021 10:59:10 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/23/2021 10:59:10 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/23/2021 10:59:10 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/23/2021 10:59:10 PM [MainThread  ] [INFO ]  Completed checking the page load process, proceeding to click button
+'08/23/2021 10:59:10 PM [MainThread  ] [INFO ]  Log in form loaded
+'08/23/2021 10:59:10 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/23/2021 10:59:19 PM [MainThread  ] [INFO ]  Completed log in process
+'08/23/2021 10:59:19 PM [MainThread  ] [INFO ]  Initializing browser instance
+'08/23/2021 10:59:21 PM [MainThread  ] [INFO ]  Navigating to home page
+'08/23/2021 10:59:31 PM [MainThread  ] [INFO ]  Attempting to log in
+'08/23/2021 10:59:31 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/23/2021 10:59:31 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/23/2021 10:59:31 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/23/2021 10:59:31 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/23/2021 10:59:31 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/23/2021 10:59:31 PM [MainThread  ] [INFO ]  Completed checking the page load process, proceeding to click button
+'08/23/2021 10:59:32 PM [MainThread  ] [INFO ]  Log in form loaded
+'08/23/2021 10:59:32 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/23/2021 10:59:38 PM [MainThread  ] [INFO ]  Completed log in process
+'08/23/2021 10:59:38 PM [MainThread  ] [INFO ]  Initializing browser instance
+'08/23/2021 10:59:40 PM [MainThread  ] [INFO ]  Navigating to home page
+'08/23/2021 10:59:45 PM [MainThread  ] [INFO ]  Attempting to log in
+'08/23/2021 10:59:45 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/23/2021 10:59:45 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/23/2021 10:59:45 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/23/2021 10:59:45 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/23/2021 10:59:45 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/23/2021 10:59:45 PM [MainThread  ] [INFO ]  Completed checking the page load process, proceeding to click button
+'08/23/2021 10:59:45 PM [MainThread  ] [INFO ]  Log in form loaded
+'08/23/2021 10:59:45 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/23/2021 11:00:31 PM [MainThread  ] [INFO ]  Unable to find order tables: ? Log in not completed successfully
+'08/23/2021 11:00:32 PM [MainThread  ] [INFO ]  Refreshing and attempting logon again
+'08/23/2021 11:00:32 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/23/2021 11:00:32 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/23/2021 11:00:32 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/23/2021 11:00:32 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/23/2021 11:00:32 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/23/2021 11:00:32 PM [MainThread  ] [INFO ]  Completed checking the page load process, proceeding to click button
+'08/23/2021 11:00:32 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/23/2021 11:01:17 PM [MainThread  ] [WARNI]  Unable to find Log In Button
+'08/23/2021 11:02:04 PM [MainThread  ] [INFO ]  Unable to find order tables: ? Log in not completed successfully
+'08/23/2021 11:02:05 PM [MainThread  ] [INFO ]  Refreshing and attempting logon again
+'08/23/2021 11:02:05 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/23/2021 11:02:05 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/23/2021 11:02:05 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/23/2021 11:02:05 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/23/2021 11:02:05 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/23/2021 11:02:05 PM [MainThread  ] [INFO ]  Completed checking the page load process, proceeding to click button
+'08/23/2021 11:02:06 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/23/2021 11:02:51 PM [MainThread  ] [WARNI]  Unable to find Log In Button
+'08/23/2021 11:03:37 PM [MainThread  ] [INFO ]  Unable to find order tables: ? Log in not completed successfully
+'08/23/2021 11:03:38 PM [MainThread  ] [INFO ]  Refreshing and attempting logon again
+'08/23/2021 11:03:38 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/23/2021 11:03:38 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/23/2021 11:03:38 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/23/2021 11:03:38 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/23/2021 11:03:38 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/23/2021 11:03:38 PM [MainThread  ] [INFO ]  Completed checking the page load process, proceeding to click button
+'08/23/2021 11:03:38 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/23/2021 11:04:21 PM [MainThread  ] [INFO ]  Completed log in process
+'08/23/2021 11:04:21 PM [MainThread  ] [INFO ]  Initializing browser instance
+'08/23/2021 11:04:23 PM [MainThread  ] [INFO ]  Navigating to home page
+'08/23/2021 11:04:37 PM [MainThread  ] [INFO ]  Attempting to log in
+'08/23/2021 11:04:37 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/23/2021 11:04:37 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/23/2021 11:04:37 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/23/2021 11:04:37 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/23/2021 11:04:37 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/23/2021 11:04:37 PM [MainThread  ] [INFO ]  Completed checking the page load process, proceeding to click button
+'08/23/2021 11:04:37 PM [MainThread  ] [INFO ]  Log in form loaded
+'08/23/2021 11:04:37 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/23/2021 11:04:47 PM [MainThread  ] [INFO ]  Completed log in process
+'08/23/2021 11:04:47 PM [MainThread  ] [INFO ]  Initializing browser instance
+'08/23/2021 11:04:50 PM [MainThread  ] [INFO ]  Navigating to home page
+'08/23/2021 11:04:54 PM [MainThread  ] [INFO ]  Attempting to log in
+'08/23/2021 11:04:54 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/23/2021 11:04:54 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/23/2021 11:04:54 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/23/2021 11:04:54 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/23/2021 11:04:54 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/23/2021 11:04:54 PM [MainThread  ] [INFO ]  Completed checking the page load process, proceeding to click button
+'08/23/2021 11:04:54 PM [MainThread  ] [INFO ]  Log in form loaded
+'08/23/2021 11:04:54 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/23/2021 11:05:40 PM [MainThread  ] [INFO ]  Unable to find order tables: ? Log in not completed successfully
+'08/23/2021 11:05:42 PM [MainThread  ] [INFO ]  Refreshing and attempting logon again
+'08/23/2021 11:05:42 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/23/2021 11:05:42 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/23/2021 11:05:42 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/23/2021 11:05:42 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/23/2021 11:05:42 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/23/2021 11:05:42 PM [MainThread  ] [INFO ]  Completed checking the page load process, proceeding to click button
+'08/23/2021 11:05:43 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/23/2021 11:06:36 PM [MainThread  ] [INFO ]  Completed log in process
+'08/23/2021 11:06:36 PM [MainThread  ] [INFO ]  Initializing browser instance
+'08/23/2021 11:06:38 PM [MainThread  ] [INFO ]  Navigating to home page
+'08/23/2021 11:06:43 PM [MainThread  ] [INFO ]  Attempting to log in
+'08/23/2021 11:06:43 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/23/2021 11:06:43 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/23/2021 11:06:43 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/23/2021 11:06:43 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/23/2021 11:06:43 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/23/2021 11:06:43 PM [MainThread  ] [INFO ]  Completed checking the page load process, proceeding to click button
+'08/23/2021 11:06:43 PM [MainThread  ] [INFO ]  Log in form loaded
+'08/23/2021 11:06:43 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/23/2021 11:07:29 PM [MainThread  ] [INFO ]  Unable to find order tables: ? Log in not completed successfully
+'08/23/2021 11:07:30 PM [MainThread  ] [INFO ]  Refreshing and attempting logon again
+'08/23/2021 11:07:30 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/23/2021 11:07:30 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/23/2021 11:07:30 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/23/2021 11:07:30 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/23/2021 11:07:30 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/23/2021 11:07:30 PM [MainThread  ] [INFO ]  Completed checking the page load process, proceeding to click button
+'08/23/2021 11:07:30 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/23/2021 11:08:16 PM [MainThread  ] [WARNI]  Unable to find Log In Button
+'08/23/2021 11:09:01 PM [MainThread  ] [INFO ]  Unable to find order tables: ? Log in not completed successfully
+'08/23/2021 11:09:03 PM [MainThread  ] [INFO ]  Refreshing and attempting logon again
+'08/23/2021 11:09:03 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/23/2021 11:09:03 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/23/2021 11:09:03 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/23/2021 11:09:03 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/23/2021 11:09:03 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/23/2021 11:09:03 PM [MainThread  ] [INFO ]  Completed checking the page load process, proceeding to click button
+'08/23/2021 11:09:03 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/23/2021 11:09:49 PM [MainThread  ] [INFO ]  Unable to find order tables: ? Log in not completed successfully
+'08/23/2021 11:09:51 PM [MainThread  ] [INFO ]  Refreshing and attempting logon again
+'08/23/2021 11:09:51 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/23/2021 11:09:51 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/23/2021 11:09:51 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/23/2021 11:09:51 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/23/2021 11:09:51 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/23/2021 11:09:51 PM [MainThread  ] [INFO ]  Completed checking the page load process, proceeding to click button
+'08/23/2021 11:09:51 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/23/2021 11:10:36 PM [MainThread  ] [WARNI]  Unable to find Log In Button
+'08/23/2021 11:11:22 PM [MainThread  ] [INFO ]  Unable to find order tables: ? Log in not completed successfully
+'08/23/2021 11:11:24 PM [MainThread  ] [INFO ]  Refreshing and attempting logon again
+'08/23/2021 11:11:24 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/23/2021 11:11:24 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/23/2021 11:11:24 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/23/2021 11:11:24 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/23/2021 11:11:24 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/23/2021 11:11:24 PM [MainThread  ] [INFO ]  Completed checking the page load process, proceeding to click button
+'08/23/2021 11:11:25 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/23/2021 11:11:34 PM [MainThread  ] [INFO ]  Completed log in process
+'08/23/2021 11:11:34 PM [MainThread  ] [INFO ]  Initializing browser instance
+'08/23/2021 11:11:36 PM [MainThread  ] [INFO ]  Navigating to home page
+'08/23/2021 11:11:45 PM [MainThread  ] [INFO ]  Attempting to log in
+'08/23/2021 11:11:45 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'08/23/2021 11:11:45 PM [MainThread  ] [INFO ]  Form button ready to click
+'08/23/2021 11:11:45 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'08/23/2021 11:11:45 PM [MainThread  ] [INFO ]  Executing page is loading function
+'08/23/2021 11:11:45 PM [MainThread  ] [INFO ]  Page loading has completed
+'08/23/2021 11:11:45 PM [MainThread  ] [INFO ]  Completed checking the page load process, proceeding to click button
+'08/23/2021 11:12:16 PM [MainThread  ] [INFO ]  Unable to find log in button
+Traceback (most recent call last):
+  File "sharkbot\tempBot.py", line 238, in enter_user_details
+  File "site-packages\selenium\webdriver\support\wait.py", line 80, in until
+selenium.common.exceptions.TimeoutException: Message: 
+
+'08/23/2021 11:12:16 PM [MainThread  ] [INFO ]  Attempting to reclick My account button from exception code
+'08/23/2021 11:12:16 PM [MainThread  ] [INFO ]  Logging into Shark...
+'08/23/2021 11:12:24 PM [MainThread  ] [INFO ]  Completed log in process
+'08/23/2021 11:12:27 PM [MainThread  ] [INFO ]  51 orders initially fetched
+[INFO] Successfully created the directory C:\Users\Admin\Documents\projects\bots\shark\bot\dist\logs 
+'09/01/2021 09:37:51 PM [MainThread  ] [INFO ]  [Chrome Driver path]:C:\Users\Admin\AppData\Local\Temp\_MEI514042\driver/chromedriver.exe
+'09/01/2021 09:37:51 PM [MainThread  ] [INFO ]  Successfully fetched client messages
+'09/01/2021 09:37:51 PM [MainThread  ] [INFO ]  Logger and configuration details successfully set
+'09/01/2021 09:37:56 PM [MainThread  ] [INFO ]  Executing trial version. You have 128 days remaining.
+'09/01/2021 09:37:56 PM [MainThread  ] [INFO ]  Setting up Bidders......
+'09/01/2021 09:37:56 PM [MainThread  ] [INFO ]  ComboBox Value 1 Bidder
+'09/01/2021 09:37:56 PM [MainThread  ] [INFO ]  Initializing browser instance
+'09/01/2021 09:37:59 PM [MainThread  ] [INFO ]  Navigating to home page
+'09/01/2021 09:38:02 PM [MainThread  ] [INFO ]  Attempting to log in
+'09/01/2021 09:38:02 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'09/01/2021 09:38:02 PM [MainThread  ] [INFO ]  Form button ready to click
+'09/01/2021 09:38:02 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'09/01/2021 09:38:02 PM [MainThread  ] [INFO ]  Executing page is loading function
+'09/01/2021 09:38:02 PM [MainThread  ] [INFO ]  Page loading has completed
+'09/01/2021 09:38:02 PM [MainThread  ] [INFO ]  Completed checking the page load process, proceeding to click button
+'09/01/2021 09:38:02 PM [MainThread  ] [INFO ]  Log in form loaded
+'09/01/2021 09:38:02 PM [MainThread  ] [INFO ]  Logging into Shark...
+'09/01/2021 09:38:13 PM [MainThread  ] [INFO ]  Completed log in process
+'09/01/2021 09:38:13 PM [MainThread  ] [INFO ]  Initializing browser instance
+'09/01/2021 09:38:16 PM [MainThread  ] [INFO ]  Navigating to home page
+'09/01/2021 09:38:22 PM [MainThread  ] [INFO ]  Attempting to log in
+'09/01/2021 09:38:22 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'09/01/2021 09:38:22 PM [MainThread  ] [INFO ]  Form button ready to click
+'09/01/2021 09:38:22 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'09/01/2021 09:38:22 PM [MainThread  ] [INFO ]  Executing page is loading function
+'09/01/2021 09:38:22 PM [MainThread  ] [INFO ]  Page loading has completed
+'09/01/2021 09:38:22 PM [MainThread  ] [INFO ]  Completed checking the page load process, proceeding to click button
+'09/01/2021 09:38:26 PM [MainThread  ] [INFO ]  Log in form loaded
+'09/01/2021 09:38:26 PM [MainThread  ] [INFO ]  Logging into Shark...
+'09/01/2021 09:38:35 PM [MainThread  ] [INFO ]  Completed log in process
+'09/01/2021 09:38:37 PM [MainThread  ] [INFO ]  51 orders initially fetched
+[INFO] Successfully created the directory C:\Users\Admin\Documents\projects\bots\shark\bot\dist\logs 
+'10/10/2021 12:38:55 PM [MainThread  ] [INFO ]  [Chrome Driver path]:C:\Users\Admin\AppData\Local\Temp\_MEI30042\driver/chromedriver.exe
+'10/10/2021 12:38:55 PM [MainThread  ] [INFO ]  Successfully fetched client messages
+'10/10/2021 12:38:55 PM [MainThread  ] [INFO ]  Logger and configuration details successfully set
+'10/10/2021 12:39:02 PM [MainThread  ] [INFO ]  Executing trial version. You have 89 days remaining.
+'10/10/2021 12:39:02 PM [MainThread  ] [INFO ]  Setting up Bidders......
+'10/10/2021 12:39:02 PM [MainThread  ] [INFO ]  ComboBox Value 2 Bidders
+'10/10/2021 12:39:02 PM [MainThread  ] [INFO ]  Initializing browser instance
+Traceback (most recent call last):
+  File "shark_gui.py", line 393, in launch_browser
+  File "shark_gui.py", line 439, in initialize_bots
+  File "sharkbot\tempBot.py", line 46, in __init__
+  File "site-packages\selenium\webdriver\chrome\webdriver.py", line 76, in __init__
+  File "site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
+  File "site-packages\selenium\webdriver\remote\webdriver.py", line 252, in start_session
+  File "site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+  File "site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 92
+Current browser version is 94.0.4606.71 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+
+'10/10/2021 01:44:31 PM [MainThread  ] [INFO ]  Executing trial version. You have 89 days remaining.
+'10/10/2021 01:44:31 PM [MainThread  ] [INFO ]  Setting up Bidders......
+'10/10/2021 01:44:31 PM [MainThread  ] [INFO ]  ComboBox Value 2 Bidders
+'10/10/2021 01:44:31 PM [MainThread  ] [INFO ]  Initializing browser instance
+Traceback (most recent call last):
+  File "shark_gui.py", line 393, in launch_browser
+  File "shark_gui.py", line 439, in initialize_bots
+  File "sharkbot\tempBot.py", line 46, in __init__
+  File "site-packages\selenium\webdriver\chrome\webdriver.py", line 76, in __init__
+  File "site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
+  File "site-packages\selenium\webdriver\remote\webdriver.py", line 252, in start_session
+  File "site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+  File "site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 92
+Current browser version is 94.0.4606.71 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+
+[INFO] Successfully created the directory C:\Users\Admin\Documents\projects\bots\shark\bot\dist\logs 
+'10/25/2021 11:16:45 PM [MainThread  ] [INFO ]  [Chrome Driver path]:C:\Users\Admin\AppData\Local\Temp\_MEI106082\driver/chromedriver.exe
+'10/25/2021 11:16:45 PM [MainThread  ] [INFO ]  Successfully fetched client messages
+'10/25/2021 11:16:45 PM [MainThread  ] [INFO ]  Logger and configuration details successfully set
+'10/25/2021 11:17:07 PM [MainThread  ] [INFO ]  Executing trial version. You have 199 days remaining.
+'10/25/2021 11:17:07 PM [MainThread  ] [INFO ]  Setting up Bidders......
+'10/25/2021 11:17:07 PM [MainThread  ] [INFO ]  ComboBox Value 2 Bidders
+'10/25/2021 11:17:07 PM [MainThread  ] [INFO ]  Initializing browser instance
+'10/25/2021 11:17:09 PM [MainThread  ] [INFO ]  Navigating to home page
+'10/25/2021 11:17:12 PM [MainThread  ] [INFO ]  Attempting to log in
+'10/25/2021 11:17:12 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'10/25/2021 11:17:13 PM [MainThread  ] [INFO ]  Form button ready to click
+'10/25/2021 11:17:13 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'10/25/2021 11:17:13 PM [MainThread  ] [INFO ]  Executing page is loading function
+'10/25/2021 11:17:13 PM [MainThread  ] [INFO ]  Page loading has completed
+'10/25/2021 11:17:13 PM [MainThread  ] [INFO ]  Completed checking the page load process, proceeding to click button
+'10/25/2021 11:17:13 PM [MainThread  ] [INFO ]  Log in form loaded
+'10/25/2021 11:17:13 PM [MainThread  ] [INFO ]  Logging into Shark...
+'10/25/2021 11:17:23 PM [MainThread  ] [INFO ]  Completed log in process
+'10/25/2021 11:17:23 PM [MainThread  ] [INFO ]  Initializing browser instance
+'10/25/2021 11:17:26 PM [MainThread  ] [INFO ]  Navigating to home page
+'10/25/2021 11:17:29 PM [MainThread  ] [INFO ]  Attempting to log in
+'10/25/2021 11:17:29 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'10/25/2021 11:17:29 PM [MainThread  ] [INFO ]  Form button ready to click
+'10/25/2021 11:17:29 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'10/25/2021 11:17:29 PM [MainThread  ] [INFO ]  Executing page is loading function
+'10/25/2021 11:17:29 PM [MainThread  ] [INFO ]  Page loading has completed
+'10/25/2021 11:17:29 PM [MainThread  ] [INFO ]  Completed checking the page load process, proceeding to click button
+'10/25/2021 11:17:30 PM [MainThread  ] [INFO ]  Log in form loaded
+'10/25/2021 11:17:30 PM [MainThread  ] [INFO ]  Logging into Shark...
+'10/25/2021 11:17:41 PM [MainThread  ] [INFO ]  Completed log in process
+'10/25/2021 11:17:41 PM [MainThread  ] [INFO ]  Initializing browser instance
+'10/25/2021 11:17:44 PM [MainThread  ] [INFO ]  Navigating to home page
+'10/25/2021 11:17:49 PM [MainThread  ] [INFO ]  Attempting to log in
+'10/25/2021 11:17:49 PM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'10/25/2021 11:17:49 PM [MainThread  ] [INFO ]  Form button ready to click
+'10/25/2021 11:17:49 PM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'10/25/2021 11:17:49 PM [MainThread  ] [INFO ]  Executing page is loading function
+'10/25/2021 11:17:49 PM [MainThread  ] [INFO ]  Page loading has completed
+'10/25/2021 11:17:49 PM [MainThread  ] [INFO ]  Completed checking the page load process, proceeding to click button
+'10/25/2021 11:17:57 PM [MainThread  ] [INFO ]  Log in form loaded
+'10/25/2021 11:17:57 PM [MainThread  ] [INFO ]  Logging into Shark...
+'10/25/2021 11:18:10 PM [MainThread  ] [INFO ]  Completed log in process
+'10/25/2021 11:18:13 PM [MainThread  ] [INFO ]  51 orders initially fetched
+'10/25/2021 11:19:08 PM [MainThread  ] [WARNI]  Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000000003983670>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/d107ec5c49fb86d6bfe33cc6f53d6172
+'10/25/2021 11:19:10 PM [MainThread  ] [WARNI]  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000000000396BEE0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/d107ec5c49fb86d6bfe33cc6f53d6172
+'10/25/2021 11:19:12 PM [MainThread  ] [WARNI]  Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000000000396BF10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/d107ec5c49fb86d6bfe33cc6f53d6172
+'10/25/2021 11:19:21 PM [MainThread  ] [WARNI]  Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000000000390DFA0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/2c6b734de782c316af492a1cd22a2e2c
+'10/25/2021 11:19:23 PM [MainThread  ] [WARNI]  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000000000069B2E0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/2c6b734de782c316af492a1cd22a2e2c
+'10/25/2021 11:19:25 PM [MainThread  ] [WARNI]  Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000006A80D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/2c6b734de782c316af492a1cd22a2e2c
+'10/25/2021 11:19:33 PM [MainThread  ] [WARNI]  Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000000000396BE20>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/d1ad1c79fb8e63c40ec505c91f260bf3
+'10/25/2021 11:19:35 PM [MainThread  ] [WARNI]  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000006AE850>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/d1ad1c79fb8e63c40ec505c91f260bf3
+'10/25/2021 11:19:37 PM [MainThread  ] [WARNI]  Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000006AE940>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/d1ad1c79fb8e63c40ec505c91f260bf3
+[INFO] Successfully created the directory C:\Users\Admin\Documents\projects\bots\shark\bot\dist\logs 
+'10/25/2021 11:30:07 PM [MainThread  ] [INFO ]  [Chrome Driver path]:C:\Users\Admin\AppData\Local\Temp\_MEI227922\driver/chromedriver.exe
+'10/25/2021 11:30:07 PM [MainThread  ] [INFO ]  Successfully fetched client messages
+'10/25/2021 11:30:07 PM [MainThread  ] [INFO ]  Logger and configuration details successfully set
+[INFO] Successfully created the directory C:\Users\Admin\Documents\projects\bots\shark\bot\dist\logs 
+'10/26/2021 09:36:38 AM [MainThread  ] [INFO ]  [Chrome Driver path]:C:\Users\Admin\AppData\Local\Temp\_MEI98282\driver/chromedriver.exe
+'10/26/2021 09:36:38 AM [MainThread  ] [INFO ]  Successfully fetched client messages
+'10/26/2021 09:36:38 AM [MainThread  ] [INFO ]  Logger and configuration details successfully set
+'10/26/2021 09:37:30 AM [MainThread  ] [INFO ]  Executing trial version. You have 198 days remaining.
+'10/26/2021 09:37:30 AM [MainThread  ] [INFO ]  Setting up Bidders......
+'10/26/2021 09:37:30 AM [MainThread  ] [INFO ]  ComboBox Value 1 Bidder
+'10/26/2021 09:37:30 AM [MainThread  ] [INFO ]  Initializing browser instance
+'10/26/2021 09:37:34 AM [MainThread  ] [INFO ]  Navigating to home page
+'10/26/2021 09:37:36 AM [MainThread  ] [INFO ]  Attempting to log in
+'10/26/2021 09:37:36 AM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'10/26/2021 09:37:36 AM [MainThread  ] [INFO ]  Form button ready to click
+'10/26/2021 09:37:36 AM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'10/26/2021 09:37:36 AM [MainThread  ] [INFO ]  Executing page is loading function
+'10/26/2021 09:37:36 AM [MainThread  ] [INFO ]  Page loading has completed
+'10/26/2021 09:37:36 AM [MainThread  ] [INFO ]  Completed checking the page load process, proceeding to click button
+'10/26/2021 09:37:37 AM [MainThread  ] [INFO ]  Log in form loaded
+'10/26/2021 09:37:37 AM [MainThread  ] [INFO ]  Logging into Shark...
+'10/26/2021 09:37:47 AM [MainThread  ] [INFO ]  Completed log in process
+'10/26/2021 09:37:47 AM [MainThread  ] [INFO ]  Initializing browser instance
+'10/26/2021 09:37:50 AM [MainThread  ] [INFO ]  Navigating to home page
+'10/26/2021 09:37:55 AM [MainThread  ] [INFO ]  Attempting to log in
+'10/26/2021 09:37:55 AM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'10/26/2021 09:37:55 AM [MainThread  ] [INFO ]  Form button ready to click
+'10/26/2021 09:37:55 AM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'10/26/2021 09:37:55 AM [MainThread  ] [INFO ]  Executing page is loading function
+'10/26/2021 09:37:55 AM [MainThread  ] [INFO ]  Page loading has completed
+'10/26/2021 09:37:55 AM [MainThread  ] [INFO ]  Completed checking the page load process, proceeding to click button
+'10/26/2021 09:37:56 AM [MainThread  ] [INFO ]  Log in form loaded
+'10/26/2021 09:37:56 AM [MainThread  ] [INFO ]  Logging into Shark...
+'10/26/2021 09:38:09 AM [MainThread  ] [INFO ]  Completed log in process
+'10/26/2021 09:38:16 AM [MainThread  ] [INFO ]  51 orders initially fetched
+'10/26/2021 09:42:37 AM [Thread-1    ] [INFO ]  Looking for new orders to bid
+'10/26/2021 09:42:37 AM [Thread-2    ] [INFO ]  Consumer bots waiting for queue url
+'10/26/2021 09:42:37 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:42:37 AM [Thread-2    ] [INFO ]  Child bidding bot entering loop to check if queue is populated
+'10/26/2021 09:42:39 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:42:50 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:42:54 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:43:02 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:43:05 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:43:15 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:43:18 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:43:25 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:43:26 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:43:33 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:43:35 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:43:42 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:43:44 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:43:50 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:43:55 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:44:04 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:44:07 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:44:14 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:44:19 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:44:25 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:44:28 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:44:34 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:44:37 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:44:47 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:44:50 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:45:01 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:45:06 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:45:13 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:45:17 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:45:28 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:45:31 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:45:37 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:45:41 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:45:49 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:45:53 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:46:02 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:46:05 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:46:12 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:46:18 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:46:31 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:46:36 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:46:47 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:46:53 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:47:01 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:47:03 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:47:12 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:47:15 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:47:22 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:47:25 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:47:31 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:47:38 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:47:49 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:47:49 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:48:01 AM [Thread-1    ] [INFO ]  Entering the event loop
+{'https://essayshark.com/writer/orders/211035165.html'}
+'10/26/2021 09:48:04 AM [Thread-2    ] [INFO ]  Consumer Bidding bot applyin for url: https://essayshark.com/writer/orders/211035165.html (size=0)
+'10/26/2021 09:48:08 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:48:08 AM [Thread-2    ] [INFO ]  Sleeping for 60 secs
+'10/26/2021 09:48:12 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:48:19 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:48:22 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:48:28 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:48:28 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:48:37 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:48:38 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:48:45 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:48:46 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:48:55 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:48:56 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:49:02 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:49:03 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:49:11 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:49:11 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:49:22 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:49:25 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:49:29 AM [Thread-2    ] [INFO ]  2 files downloaded
+'10/26/2021 09:49:30 AM [Thread-2    ] [INFO ]  Bid Status set to false. Order not applied
+'10/26/2021 09:49:30 AM [Thread-2    ] [INFO ]  1 orders have been processed
+'10/26/2021 09:49:30 AM [Thread-2    ] [INFO ]  Child bidding bot entering loop to check if queue is populated
+'10/26/2021 09:49:36 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:49:38 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:49:48 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:49:51 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:49:58 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:50:01 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:50:11 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:50:13 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:50:21 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:50:22 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:50:33 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:50:35 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:50:44 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:50:46 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:50:55 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:50:58 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:51:06 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:51:07 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:51:17 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:51:19 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:51:29 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:51:30 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:51:36 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:51:38 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:51:44 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:51:45 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:51:53 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:51:56 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:52:04 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:52:07 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:52:16 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:52:18 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:52:26 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:52:29 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:52:39 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:52:40 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:52:46 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:52:47 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:52:56 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:52:57 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:53:06 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:53:07 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:53:15 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:53:16 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:53:26 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:53:27 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:53:32 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:53:34 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:53:45 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:53:47 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:53:55 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:53:56 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:54:03 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:54:05 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:54:12 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:54:16 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:54:27 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:54:29 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:54:38 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:54:41 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:54:49 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:54:52 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:54:59 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:55:02 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:55:10 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:55:11 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:55:19 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:55:20 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:55:29 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:55:31 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:55:38 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:55:39 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:55:46 AM [Thread-1    ] [INFO ]  Entering the event loop
+{'https://essayshark.com/writer/orders/210994851.html'}
+'10/26/2021 09:55:48 AM [Thread-2    ] [INFO ]  Consumer Bidding bot applyin for url: https://essayshark.com/writer/orders/210994851.html (size=0)
+'10/26/2021 09:55:49 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:55:51 AM [Thread-2    ] [INFO ]  Sleeping for 30 secs
+'10/26/2021 09:55:53 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:55:59 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:56:00 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:56:11 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:56:13 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:56:21 AM [Thread-2    ] [INFO ]  Bid Status set to false. Order not applied
+'10/26/2021 09:56:21 AM [Thread-2    ] [INFO ]  2 orders have been processed
+'10/26/2021 09:56:21 AM [Thread-2    ] [INFO ]  Child bidding bot entering loop to check if queue is populated
+'10/26/2021 09:56:22 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:56:25 AM [Thread-1    ] [INFO ]  No new orders to bid found
+'10/26/2021 09:56:35 AM [Thread-1    ] [INFO ]  Entering the event loop
+'10/26/2021 09:56:36 AM [Thread-1    ] [INFO ]  Unable to find order table
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "threading.py", line 932, in _bootstrap_inner
+  File "threading.py", line 870, in run
+  File "sharkbot\tempBot.py", line 302, in fetch_queued_orders
+AttributeError: 'tuple' object has no attribute 'difference'
+'10/26/2021 10:10:31 AM [MainThread  ] [INFO ]  Stopping all threads...
+'10/26/2021 11:15:05 AM [MainThread  ] [INFO ]  Executing trial version. You have 198 days remaining.
+'10/26/2021 11:15:05 AM [MainThread  ] [INFO ]  Setting up Bidders......
+'10/26/2021 11:15:05 AM [MainThread  ] [INFO ]  ComboBox Value 1 Bidder
+'10/26/2021 11:15:05 AM [MainThread  ] [INFO ]  Initializing browser instance
+'10/26/2021 11:15:09 AM [MainThread  ] [INFO ]  Navigating to home page
+'10/26/2021 11:15:13 AM [MainThread  ] [INFO ]  Attempting to log in
+'10/26/2021 11:15:13 AM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'10/26/2021 11:15:13 AM [MainThread  ] [INFO ]  Form button ready to click
+'10/26/2021 11:15:13 AM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'10/26/2021 11:15:13 AM [MainThread  ] [INFO ]  Executing page is loading function
+'10/26/2021 11:15:13 AM [MainThread  ] [INFO ]  Page loading has completed
+'10/26/2021 11:15:13 AM [MainThread  ] [INFO ]  Completed checking the page load process, proceeding to click button
+'10/26/2021 11:15:14 AM [MainThread  ] [INFO ]  Log in form loaded
+'10/26/2021 11:15:14 AM [MainThread  ] [INFO ]  Logging into Shark...
+'10/26/2021 11:15:28 AM [MainThread  ] [INFO ]  Completed log in process
+'10/26/2021 11:15:28 AM [MainThread  ] [INFO ]  Initializing browser instance
+'10/26/2021 11:15:32 AM [MainThread  ] [INFO ]  Navigating to home page
+'10/26/2021 11:15:45 AM [MainThread  ] [INFO ]  Attempting to log in
+'10/26/2021 11:15:45 AM [MainThread  ] [INFO ]  Attempting to launch log in form pop up
+'10/26/2021 11:15:45 AM [MainThread  ] [INFO ]  Form button ready to click
+'10/26/2021 11:15:45 AM [MainThread  ] [INFO ]  Checking whether page loading has completed
+'10/26/2021 11:15:45 AM [MainThread  ] [INFO ]  Executing page is loading function
+'10/26/2021 11:15:45 AM [MainThread  ] [INFO ]  Page loading has completed
+'10/26/2021 11:15:45 AM [MainThread  ] [INFO ]  Completed checking the page load process, proceeding to click button
+'10/26/2021 11:16:15 AM [MainThread  ] [INFO ]  Unable to find log in button
+Traceback (most recent call last):
+  File "sharkbot\tempBot.py", line 239, in enter_user_details
+  File "site-packages\selenium\webdriver\support\wait.py", line 80, in until
+selenium.common.exceptions.TimeoutException: Message: 
+
+'10/26/2021 11:16:15 AM [MainThread  ] [INFO ]  Attempting to reclick My account button from exception code
+'10/26/2021 11:16:16 AM [MainThread  ] [INFO ]  Logging into Shark...
+'10/26/2021 11:16:24 AM [MainThread  ] [INFO ]  Completed log in process
+'10/26/2021 11:16:26 AM [MainThread  ] [INFO ]  51 orders initially fetched
+'10/26/2021 11:18:20 AM [Thread-3    ] [INFO ]  Looking for new orders to bid
+'10/26/2021 11:18:20 AM [Thread-4    ] [INFO ]  Consumer bots waiting for queue url
+'10/26/2021 11:18:20 AM [Thread-3    ] [INFO ]  Entering the event loop
+'10/26/2021 11:18:20 AM [Thread-4    ] [INFO ]  Child bidding bot entering loop to check if queue is populated
+'10/26/2021 11:18:22 AM [Thread-3    ] [INFO ]  No new orders to bid found
+'10/26/2021 11:18:31 AM [Thread-3    ] [INFO ]  Entering the event loop
+'10/26/2021 11:18:36 AM [Thread-3    ] [INFO ]  No new orders to bid found
+'10/26/2021 11:18:43 AM [Thread-3    ] [INFO ]  Entering the event loop
+'10/26/2021 11:18:46 AM [Thread-3    ] [INFO ]  No new orders to bid found
+'10/26/2021 11:18:55 AM [Thread-3    ] [INFO ]  Entering the event loop
+'10/26/2021 11:18:57 AM [Thread-3    ] [INFO ]  No new orders to bid found
+'10/26/2021 11:19:06 AM [Thread-3    ] [INFO ]  Entering the event loop
+'10/26/2021 11:19:08 AM [Thread-3    ] [INFO ]  No new orders to bid found
+'10/26/2021 11:19:20 AM [Thread-3    ] [INFO ]  Entering the event loop
+'10/26/2021 11:19:23 AM [Thread-3    ] [INFO ]  No new orders to bid found
+'10/26/2021 11:19:32 AM [Thread-3    ] [INFO ]  Entering the event loop
+'10/26/2021 11:19:34 AM [Thread-3    ] [INFO ]  No new orders to bid found
+'10/26/2021 11:19:44 AM [Thread-3    ] [INFO ]  Entering the event loop
+'10/26/2021 11:19:46 AM [Thread-3    ] [INFO ]  No new orders to bid found
+'10/26/2021 11:19:53 AM [Thread-3    ] [INFO ]  Entering the event loop
+'10/26/2021 11:19:57 AM [Thread-3    ] [INFO ]  No new orders to bid found
+'10/26/2021 11:20:00 AM [MainThread  ] [INFO ]  Stopping all threads...
+'10/26/2021 11:23:33 AM [MainThread  ] [INFO ]  Stopping all threads...
+'10/26/2021 11:23:35 AM [MainThread  ] [WARNI]  Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000044DBF10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/be3a4d508b9466a43e50e95523659b63
+'10/26/2021 11:23:37 AM [MainThread  ] [WARNI]  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000044EFCA0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/be3a4d508b9466a43e50e95523659b63
+'10/26/2021 11:23:39 AM [MainThread  ] [WARNI]  Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000044EFCD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/be3a4d508b9466a43e50e95523659b63
+'10/26/2021 11:23:44 AM [MainThread  ] [WARNI]  Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000044DB370>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/8c14e6c5ac609ee5ec08ff9fcea8b398
+'10/26/2021 11:23:46 AM [MainThread  ] [WARNI]  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000044EF130>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/8c14e6c5ac609ee5ec08ff9fcea8b398
+'10/26/2021 11:23:48 AM [MainThread  ] [WARNI]  Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000044EF7F0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/8c14e6c5ac609ee5ec08ff9fcea8b398
